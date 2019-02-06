@@ -1,0 +1,156 @@
+body{
+	margin: 0;
+}
+.contenedor{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.help_button{
+	position: fixed;
+    top: 30%;
+    width: 70px;
+    height: 69px;
+    background-image: url(../images/boton_ayuda.png);
+    background-size: cover;
+    left: 5%;
+}
+/*MENU*/
+.menu{
+	background: rgb(84,107,33);
+    color: white;
+}
+.menu ul{
+	padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+	font-family: 'Oswald', sans-serif;
+}
+.menu ul a{
+	width: 100%;
+	text-align: center; 
+	border-left: 1px solid white;
+	text-decoration: none;
+	color: white;
+}
+.menu ul a:first-child{
+	border-left: 0px solid white;	
+}
+/*FOOTER*/
+.footer{
+	background-image:url('../images/footer.jpg'); 
+	background-repeat: repeat;
+	margin-top: 120px;
+	border-top: 15px solid rgb(123,98,36);
+}
+.menu_footer ul a{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+.menu_footer ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	position: relative;
+	top: -15px;
+	margin: 0;
+}
+.info_footer h5{
+	font-family: 'Source Serif Pro', serif;
+	font-size: 15px;
+	text-align: center;
+	margin: 10px 0 0 0;
+	color: white;
+	margin-bottom: 15px;
+}
+.logos{
+	background:white;
+}
+.logos div{
+	display: flex;
+	justify-content: center;
+}
+.logos div h3{
+	font-family: 'Oswald';
+    color: rgb(123,98,36);
+    font-size: 15px;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 25px;
+    border-bottom: 5px solid rgb(123,98,36);
+    background: white;
+    margin-bottom: 0;
+    height: 27px;
+}
+.fmi{
+	background-image: url(../images/logo_fmi.png);
+}
+.logos div div{
+	margin-top: 13px;
+    width: 465px;
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.info_footer{
+	width: 60%;
+    margin-right: 0;
+}
+@media screen and (max-width: 500px){
+	.header figure a img{
+		width: 190px;
+	}
+	.portada{
+		height: 200px;
+	}
+	.portada div h1{
+		font-size: 40px;
+    	padding-top: 76px;
+	}
+	.portada div h3{
+		font-size: 18px;
+	}
+	section nav{
+		position: absolute;
+    	left: -150%;
+	}
+	footer{
+		margin: 10px 0 10px 0 !important;
+	}
+	footer .menu_footer ul a{
+		    width: 400px;
+    text-align: center;
+    margin: 10px 0;
+	}
+	.menu_footer ul{
+		flex-wrap: wrap;
+	}
+	.info_footer, .menu_footer ul li a img{
+		visibility: hidden;
+    	height: 0;
+	}
+	.logos div h3{
+		margin: 10px 0;
+    	font-size: 14px;
+    	line-height: 2;
+	}
+	.logos div{
+		flex-wrap: wrap;
+	}
+	.help_button{
+    width: 50px;
+    height: 48px;
+    z-index: 3;
+	}
+}
+/*
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Serif Pro', serif;*/

@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./css/style-historico-antes.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+  <title>Histórico del clima</title>
+</head>
+<body>
+  <a href="ayuda.pdf" target="_blank" class="help_button"></a>
+  <section class="logo">
+    <header class="contenedor header">
+      <figure>
+        <a href="./index.html"><img src="./images/logo.jpg"></a>
+      </figure>
+    </header>
+  </section>
+  <section class="portada">
+    <div class="contenedor"></div>    
+  </section>
+  <section class="contenedor section1">
+    <article class="section1_article1">
+      <img class="img_title" src="./images/icon_antes.png">
+      <h1>CONOZCA EL CLIMA HISTÓRICO DE SU REGIÓN</h1>  
+    </article>
+    <article class="section1_article2">
+      <h3>La información histórica (más de 30 años) es de gran utilidad porque permite conocer el estado atmosférico promedio o esperado en una región específica. Basado en el comportamiento de las diferentes variables atmosféricas, en el transcurso del año, usted puede identificar cuál o cuáles son los meses en los que normalmente se registran mejores condiciones para el desarrollo de su cultivo.</h3>
+    </article>
+  </section>
+  <section class="contenedor section2">
+    <article class="section2_article1">
+      <div class="brown_bar"></div>
+      <div>
+        <h1>PARA TENER EN CUENTA</h1>
+        <img src="./images/admiration_icon.png">
+      </div>
+    </article>
+    <article class="section2_article2">
+      <div id="Precip">
+      </div>
+      <div id="Temp_max">
+      </div>
+      <div id="Temp_min">
+      </div>
+    </article>
+    <article class="section2_article3">
+      <div id="Luz">
+      </div>
+      <div id="Lluvia">
+      </div>
+      <div id="Humedad">
+      </div>
+    </article>
+  </section>
+  <section class="contenedor section3">
+    <article class="">
+      <div class="icons">
+            <div class="icon1" onmouseenter="show('precip'); showVariable('precipitacion','graf_prec','map_prec')" onmouseleave="hide('precip')">
+              <div>
+                <h6 class="precip" id="precip">Precipitaciones</h6>
+                <div class="border_left"></div>
+              </div>
+              <img src="./images/precip.png">
+            </div>
+            <div class="icon2" onmouseenter="show('temp_min');showVariable('temperatura_minima','graf_tmin','map_tmin')" onmouseleave="hide('temp_min')">
+              <div>
+                <h6 class="temp_min"  id="temp_min">Temp. Mín.</h6>
+                <div class="border_left border2"></div>
+              </div>
+              <img src="./images/temp_min.png">
+            </div>
+            <div class="icon3" onmouseenter="show('temp_max');showVariable('temperatura_maxima','graf_tmax','map_tmax')" onmouseleave="hide('temp_max')">
+              <div>
+                <h6  class="temp_max" id="temp_max">Temp. Máx.</h6>
+                <div class="border_left border3"></div>
+              </div>
+              <img src="./images/temp_max.png">
+            </div>
+            <div class="icon4" onmouseenter="show('luz');showVariable('brillo_solar','graf_solarbri','map_solarbri')" onmouseleave="hide('luz')">
+              <div>
+                <h6 id="luz" class="luz">Brillo solar</h6>
+                <div class="border_rigth border4"></div>
+              </div>
+              <img src="./images/luz.png">
+            </div>
+            <div class="icon5" onmouseenter="show('lluvia');showVariable('dias_con_lluvia','graf_raindays','map_raindays')" onmouseleave="hide('lluvia')">
+              <div>
+                <h6 id="lluvia" class="lluvia">Días de lluvia</h6>
+                <div class="border_rigth border5"></div>
+              </div>
+              <img src="./images/lluvia.png">
+            </div>
+            <div class="icon6" onmouseenter="show('humedad');showVariable('humedad_relativa','graf_rhum','map_rhum')" onmouseleave="hide('humedad')">
+              <div>
+                <h6 id="humedad" class="humedad">Humedad Rel.</h6>
+                <div class="border_rigth border6"></div>
+              </div>
+              <img src="./images/humedad.png">
+            </div>
+          </div>
+      <div class="variable_graph" id="variable_graph"></div>
+    </article>
+  </section>
+  <section class="section4 contenedor">
+    <article class="section2_article1">
+      <div class="brown_bar"></div>
+      <div>
+        <h1>ESTAS SON LAS ESTACIONES CLIMÁTICAS DE LA REGIÓN</h1>
+      </div>
+    </article>
+    <article>
+      <h3 id="title_depto"></h3>
+      <div id="map"></div>
+      <div>
+        
+      </div>
+    </article>
+  </section>
+    <footer class="footer">
+        <div class="menu_footer contenedor">
+            <ul>
+                <li>
+                    <a href="./index.html"><img src="./images/logo.jpg"></a>
+                </li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info_footer contenedor">
+            <h5>
+FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+            <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
+        </div>
+        <div class="logos">
+          <div class="contenedor">
+            <h3>CON EL APOYO DE:</h3>
+            <div class="fmi"></div>
+          </div>
+        </div>
+    </footer>
+  <script type="text/javascript">
+    var tamMovil = '15px';
+    var tamDesktop1 =  '30px';
+    var tamDesktop =  '22px';
+    var topDesktop1 =  '12%';
+    var topDesktop =  '40%';
+    var municipio;
+    var departamento;
+    var zona;
+    var variable  = document.getElementById('variable_graph');
+    var mapa  = document.getElementById('map');
+    var title_depto  = document.getElementById('title_depto');
+    var paramstr = window.location.search.substr(1);
+        var paramarr = paramstr.split ("&");
+        var params = {};
+        for ( var i = 0; i < paramarr.length; i++) {
+            var tmparr = paramarr[i].split("=");
+            params[i] = replaceAll(tmparr[1],"%20", "_");
+        }
+        municipio = params[0];
+        departamento = params[1];
+        var departamento1 = departamento.toLowerCase();
+        zona = params[2];
+        if(zona!="")
+          departamento =departamento+"_"+zona;
+        title_depto.innerHTML = replaceAll(departamento,'_', ' ');
+        function showVariable(pre1, pre2, pre3){
+          var locImage = departamento.toLowerCase();
+          locImage = replaceAll(locImage, '20%',' ');
+          variable.style.backgroundImage = "url('./images/graficos/"+pre1+"/graficos/"+pre2+"_"+locImage.toLowerCase()+".jpg')";
+          map.style.backgroundImage = "url('./images/graficos/"+pre1+"/mapas/"+pre3+"_"+locImage.toLowerCase()+".jpg')";
+        }
+    function show(elemento){
+        console.log(elemento);
+        var elem = document.getElementById(elemento);
+        console.log(elem);
+        elem.style.fontSize = tamDesktop1;
+        elem.style.top = topDesktop1;
+      }
+      function hide(elemento){
+        var elem = document.getElementById(elemento);
+        elem.style.fontSize = tamDesktop;
+        elem.style.top = topDesktop;
+      }
+      function replaceAll(text, c1, c2){
+        while(text.indexOf(c1)>0){
+          text = text.replace(c1,c2);
+        }
+        return text;
+      }
+
+
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+      tamDesktop1 =  '14px';
+       tamDesktop =  '14px';
+       topDesktop1 =  '70px';
+       topDesktop =  '70px';
+      } else {
+       tamDesktop1 =  '30px';
+       tamDesktop =  '22px';
+       topDesktop1 =  '12%';
+       topDesktop =  '40%';
+      }
+  }
+
+  var x = window.matchMedia("(max-width: 500px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+  </script>
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script>
+  $(function() 
+  {
+    $(document).ready( function()
+      {
+         //var TXT_URL = 'https://www.mozilla.org/media/MPL/2.0/index.815ca599c9df.txt';
+         var TXT_URL = 'https://afverdugo3348.github.io/fedearroz-clima/editables/climatologia/'+departamento1+'.txt';
+        $.ajax({
+          url: TXT_URL,
+        }).then(function(data) {
+          console.log(data); // Obtienes el texto
+          leer(data);
+        });
+    });
+  }); 
+  function leer(data){
+    var data1 = data.split('#');
+    var i;
+    var j;
+    for (i = 1; i< data1.length; i++) {
+        var variable = data1[i].split('\n');
+        for (j = 0;  j <variable.length-1;  j++) {
+          var id= variable[0].split(',')[0];
+          var title= variable[0].split(',')[1];
+          var elem = document.getElementById(id);
+          console.log(variable[0]);
+          console.log(elem);
+          var node;
+          if(j==0){
+            node = document.createElement('H1');
+            node.innerHTML='<img src="./images/'+id.toLowerCase()+'.png">'+title;
+            elem.appendChild(node);
+          }
+          else{
+            node = document.createElement('H3');
+            node.innerHTML='<p></p>'+variable[j];
+            elem.appendChild(node);
+          }
+        }
+    }
+  }
+ </script>
+</body>
+</html>

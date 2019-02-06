@@ -1,0 +1,358 @@
+/*HEADER*/
+.portada{
+	background-image: url('../images/header_index.jpg');
+	background-size: cover;
+	height: 500px;
+	font-family: 'Fira Sans', sans-serif;
+}
+.title{
+	padding-top: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+.header{
+	margin: 0;
+}
+.header figure{
+	margin: 0;
+}
+.logo{
+	height: 40px;
+}
+.subtitle{
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+/*MAPA*/
+.description{
+	margin: 50px auto;
+    text-align: center;
+    color: rgb(32,66,3);
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.mapa{
+	    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text_frame{
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 50%;
+    position: relative;
+}
+.text_frame h1{
+    margin: 10px;
+	font-family: 'Oswald', sans-serif;
+    color: rgb(130,41,37);
+    font-size: 45px;
+}
+.text_frame h2{
+	 margin: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(130,41,37);
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+.text_frame h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: rgb(32,66,3);
+	margin: 0;
+}
+.text_frame input[type="button"]{
+	display: block;
+	font-size: 15px;
+	color: white;
+	background: rgb(123,98,36);
+	margin: 50px 0 0 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+	line-height: 2;
+    float: right;
+}
+.text_frame a{
+	text-decoration: none;
+}
+.text_frame input[type="text"]{
+	font-family:'Open Sans Condensed';
+    font-weight: normal;
+    font-size: 20px;
+    border: 1px solid rgb(88,106,45);
+    line-height: 2;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.text_frame .icons{
+	margin-top:70px;
+    width: 310px;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+}
+.inputs, .texts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.texts h3{
+    color: rgb(100,85,44);
+    font-size: 12px;
+}
+.error h3{
+    text-align: center;
+    font-size: 13px;
+    margin-left: 35px;
+    visibility: hidden;
+    transition: .5s;
+}
+.text_frame .button_next{
+	width: 470px;
+}
+.text_frame .button_next a{
+	float: right;
+}
+.search_icon{
+    background-image: url(../images/search.png) !important;
+    background-position: right !important;
+    background-size: 42px !important;
+    width: 94px;
+    height: 40px;
+    background-repeat: no-repeat !important;
+    text-align: left;
+}
+.icons, .button_next{
+    visibility: hidden;
+}
+.icons h6{
+    position: absolute;
+    border-bottom: 10px solid rgb(84,107,33);
+    top: -56px;
+    font-size: 20px;
+    font-family: Oswald;
+    margin: 0;
+    text-align: center;
+    color: rgb(84,107,33);
+}
+.precip{
+    width: 120px;
+    left: 95px;
+}
+.temp_min{
+	width: 161px;
+    left: 25px;
+}
+.temp_max{
+	width: 164px;
+    left: -31px;
+}
+.luz{
+    width: 87px;
+    left: -44px;
+}
+.lluvia{
+    width: 103px;
+    left: -103px;
+}
+.humedad{
+	width: 141px;
+    left: -173px;
+}
+.border_left{
+    border-left: 1px solid rgb(84,107,33);
+    border-top: 1px solid rgb(84,107,33);
+    position: absolute;
+    height: 50%;
+    top: -50%;
+    left: 50%;
+}
+.border_rigth{
+    border-right: 1px solid rgb(84,107,33);
+    border-top: 1px solid rgb(84,107,33);
+    position: absolute;
+    height: 50%;
+    top: -50%;
+    left: 50%;
+}
+.border1{
+	width: 150px;
+}
+.border2{
+	width: 100px;
+}
+.border3{
+	width: 50px;
+}
+.border4{
+	width: 10px;
+}
+.border5{
+	width: 50px;
+	left: -50%;
+}
+.border6{
+	width: 100px;
+	left: -150%;
+}
+#clima,#actividades,#clima1,#actividades1, #temp_max,#luz,#lluvia,#humedad{
+	visibility: hidden;
+}
+#clima, #actividades{
+    background: url(../images/departamentos/Casanare/Casanare_Aguazul_Aguazul_actividades.png);
+    width: 42%;
+    height: 404px;
+    position: absolute;
+    left: 55%;
+    top: -71px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
+	background-color: rgb(84,107,33);
+    background-size: cover;
+    width: 50px;
+    height: 100%;
+    position: relative;
+    margin: 2px;
+}
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover, .icon6:hover{
+	background-color: rgba(84,107,33,0.8);
+}
+.icon1 img{
+	width: 80%;
+    left: 10%;
+    position: relative;
+    top: 10%;
+}
+.icon1 img{
+	width: 80%;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+}
+.icon2 img, .icon3 img{
+	    height: 80%;
+    left: 20%;
+    position: absolute;
+    top: 10%
+}
+.icon4 img, .icon5 img{    
+	width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 15%;
+}
+.icon6 img{
+	height: 80%;
+    left: 25%;
+    position: absolute;
+    top: 10%;
+}
+#map {
+    height: 100%;
+}
+.map_frame{
+	width: 50%;
+    height: 500px;
+}
+@media screen and (max-width: 500px){
+    .description{
+        font-size: 15px;
+        text-align: justify;
+        margin: 20px;
+    }
+    .mapa{
+        flex-wrap: wrap;
+        height: 500px;
+        position: relative;
+        margin-top: 20px;
+    }
+    .map_frame{
+        position: absolute;
+        top: 52%;
+        height: 300px;
+        width: 95%;
+    }
+    .text_frame{
+        position: absolute;
+        top: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .precip{
+        left: 0;
+    }
+    .temp_min{
+        left: -150%;
+    }
+    .border_left{
+        width: 0;
+    }
+    .text_frame h1{
+        font-size: 28px;
+    }
+    .text_frame h3{
+        font-size: 15px;
+    }
+    .inputs{
+        margin: 20px 0 0 0;
+    }
+    .text_frame input[type = "select"]{
+        font-size: 15px;
+        margin-top: 0;
+        line-height: 1;
+        height: 30px;
+    }
+    .search_icon{
+        margin: 10px !important;
+        width: 100%;
+        border-radius: 15px;
+        text-align: center;
+        background-position: 180px !important;
+    }
+    .texts{
+        margin: 0;
+    }
+    .section4{
+        height: 900px;
+    }
+    .icons{
+        position: absolute;
+        top: 550px;
+    }
+    #button_next1{
+        height: 0;
+        visibility: hidden;
+        color: white;
+    }
+    .button_next{    
+        position: absolute;
+        top: 700px;
+        width: 100% !important;
+    }
+    .text_frame input[type="button"]{
+        width: 100%;
+        border-radius: 15px;
+        margin: 0;
+    }
+    #clima,#actividades{
+        top: 250px;
+        left: 0;
+        margin: 0 5%;
+        width: 90%;
+    }
+}

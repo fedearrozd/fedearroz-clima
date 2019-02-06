@@ -1,0 +1,349 @@
+/*HEADER*/
+.portada{
+	background-image: url('../images/header_etapa.jpg');
+	background-size: cover;
+	height: 500px;
+	font-family: 'Fira Sans', sans-serif;
+}
+.title{
+	padding-top: 300px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 100px;
+    color: white;
+}
+.header{
+	margin: 0;
+}
+.header figure{
+	margin: 0;
+}
+.logo{
+	height: 40px;
+}
+.subtitle{
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0 auto;
+	text-align: right;
+	color: white;
+}
+/*CONTENT*/
+.description{
+	margin: 50px auto;
+    text-align: justify;
+    color: rgb(40,65,16);
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.title_etapa_seleccion{
+	font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(130,41,37);
+    font-size: 40px;
+    text-align: center;
+}
+.antes_button{
+	background: rgb(117,84,65);
+}
+.durante_button{
+	background: rgb(103,113,49);
+}
+.despues_button{
+	background: rgb(178,204,69);
+}
+.etapa article{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.etapa article h3{
+	color: white;
+    width: 140px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    height: 60px;
+    padding: 10px;
+}
+.etapa article a{
+	text-decoration: none;
+}
+.barra_horizontal{
+	height: 10px;
+    position: absolute;
+    width: 80%;
+    background: rgb(84,107,33);
+    z-index: -1;
+}
+.ciclo{
+    width: 100%;
+}
+/*ANTES*/
+.antes_background{
+	background-image: url(../images/antes.jpg);
+	background-size: cover; 
+}
+.antes_background h1{
+	padding-top: 150px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 50px;
+    color: white;    
+	font-family: 'Fira Sans', sans-serif;
+}
+.antes_background h3{
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0 auto;
+	text-align: left;
+	color: white;
+	padding-bottom: 50px;
+}
+.antes_text article h3:first-child{
+    margin-bottom: 20px !important;
+	    font-family: 'Source Serif Pro', serif;
+    font-weight: normal;
+    margin: 50px;
+    font-size: 15px;
+    text-align: justify;
+}
+.antes_text article ul li{
+    margin:     15px !important;
+    }
+.antes_text div:first-child{
+	display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 80px;
+    flex-wrap: nowrap;
+}
+.antes_text div img{
+    width: 250px;
+    margin-left: 70px;
+}
+.list_text div div a img{
+    width: 40%;
+    margin: 0;
+}
+.list_text div div a h3{
+    margin-left: 10px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+.list_text div{
+	list-style: none;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+.antes_text .list_text div a{
+    border: 2px solid rgb(172, 206, 24);
+    color: rgb(172, 206, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.antes_text .list_text div a:hover{
+	background: rgb(172, 206, 24);
+    color: white;
+}
+.durante.list_text div a{
+    border: 2px solid rgb(123, 82, 62);
+    color: rgb(123, 82, 62);
+}
+.durante.list_text div a:hover{
+	background: rgb(123, 82, 62);
+    color: white;
+}
+.despues.list_text div a{
+    border: 2px solid rgb(101,114,36);
+    color: rgb(101,114,36);
+}
+.despues.list_text div a:hover{
+	background: rgb(101,114,36);
+    color: white;
+}
+.list_text div a{
+	font-family: Oswald;
+    margin: 20px 0;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 10px;    
+    padding: 15px 5px;
+    font-size: 20px;
+    transition: 0.5s;
+    line-height: 1.2;
+    margin: 10px auto;
+}
+.list_text a{
+	text-decoration: none;
+}
+/*DURANTE*/
+.durante_background{
+	background-image: url(../images/durante.jpg);
+	background-size: cover; 
+}
+.durante_background h1{
+	padding-top: 150px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 50px;
+    color: white;    
+	font-family: 'Fira Sans', sans-serif;
+}
+.durante_background h3{
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0 auto;
+	text-align: left;
+	color: white;
+	padding-bottom: 50px;
+}
+/*DESPUES*/
+.despues_background{
+	background-image: url(../images/despues.jpg);
+	background-size: cover; 
+}
+.despues_background h1{
+	padding-top: 150px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 50px;
+    color: white;    
+	font-family: 'Fira Sans', sans-serif;
+}
+.despues_background h3{
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0 auto;
+	text-align: left;
+	color: white;
+	padding-bottom: 50px;
+}
+@media screen and (max-width: 500px){
+    .portada div h1{
+        
+    }
+    .description{
+        font-size: 15px;
+        text-align: justify;
+        margin: 20px;
+    }
+    .title{
+        text-align: center;
+        padding-top: 120px !important;
+    }
+    .subtitle{
+            text-align: center;
+    font-size: 21px;
+    }
+    .title_etapa_seleccion{
+        font-size: 22px;
+    line-height: 1.2;
+    }
+    .etapa  article{
+            width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    }
+    .etapa  article a{
+            width: 52%;
+    margin: 0 auto;
+    }
+    .barra_horizontal{
+        visibility: hidden;
+    }
+    .etapa article h3{
+        margin:5px;
+    }
+        .antes_background, .durante_background, .despues_background{
+            height: 200px;
+    background-position-x: -285px;
+    }
+    .durante_background{
+         height: 200px;
+    background-position-x: -240px;
+    }
+    .antes_background h1,  .durante_background h1, .despues_background h1{
+            padding: 38px 10px 5px 10px;
+    font-size: 38px;
+    width: 190px;
+    text-align: center;
+    line-height: 1;
+    }
+    .despues_background h1{
+        padding: 60px 10px 5px 10px;
+    font-size: 30px;
+    width: 270px;
+    text-align: center;
+    line-height: 1;
+    }
+    .antes_background h3,  .durante_background h3 , .despues_background h3{
+        font-size: 18px;
+    width: 190px;
+    text-align: center;
+    }
+    .despues_background h3{
+          font-size: 18px;
+    width: 300px;
+    text-align: center;
+    }
+    .antes_text article h3:first-child{
+            font-size: 13px;
+    margin: 30px;
+    }
+    .antes_text div:first-child{
+        flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    }
+    .antes_text div img{
+            margin: 0 0 15px 0;
+    width: 150px;
+    }
+    .antes_text div:first-child:before{
+        content: 'Antes de la siembra';
+    font-family: 'Open Sans Condensed';
+    font-size: 28px;
+    color: rgb(112,83,65);
+    margin-bottom: 5px;
+    }
+    .antes_text .list_text div a{
+            flex-wrap: wrap;
+    padding: 5px;
+        margin: 5px;
+    }
+    .list_text div div a img{
+        margin: 0 auto;
+    }
+    .list_text div div a h3{
+            margin: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    }
+    .conozca_text{
+        font-size: 13px !important;
+    }
+    .list_text div{
+            margin: 0;
+    margin-bottom: 20px;
+    }
+     .durante div:first-child:before{
+        content: 'Etapa vegetativa';
+    font-family: 'Open Sans Condensed';
+    font-size: 28px;
+    color: rgb(104,113,47);
+    margin-bottom: 5px;
+    }
+    .despues div:first-child:before{
+        content: 'Etapa reproductiva';
+    font-family: 'Open Sans Condensed';
+    font-size: 28px;
+    color: rgb(181,205,54);
+    margin-bottom: 5px;
+    }
+}

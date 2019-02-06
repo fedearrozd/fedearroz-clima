@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./css/style-durante.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+	<title>Evaluación de condiciones</title>
+</head>
+<body>
+	<a href="ayuda.pdf" target="_blank" class="help_button"></a>
+	<section class="logo">
+		<header class="contenedor header">
+			<figure>
+				<a href="./index.html"><img src="./images/logo.jpg"></a>
+			</figure>
+		</header>
+	</section>
+	<section class="portada">
+		<div class="contenedor"></div>		
+	</section>
+	<section class="contenedor section1">
+		<article class="section1_article1">
+			<img class="img_title" src="./images/icon_durante.png">
+			<h1 class="title_evaluacion">EVALUACIÓN DE LAS CONDICIONES CLIMÁTICAS ACTUALES, MONITOREO DE LABORES Y DESARROLLO DEL CULTIVO</h1>	
+		</article>
+		<article class="section1_article2">
+			<h3 class=>En esta sección usted puede verificar la efectividad de sus aplicaciones, monitoreando las condiciones atmosféricas que se presentaron después de la labor realizada. También puede monitorear las condiciones que se presentaron durante etapas críticas del desarrollo del cultivo, como la germinación.<p></p>
+
+Aquí usted tiene acceso a los registros de la red de estaciones meteorológicas de FEDEARROZ, distribuida en las diferentes regiones arroceras del país. Usted puede consultar el estado actual de las diferentes variables meteorológicas, el comportamiento hora a hora de los últimos 5 días y el comportamiento día a día del último mes. También puede descargar los registros históricos.</h3>
+		</article>
+	</section>
+	<section class="contenedor section2">
+		<article class="vegetativa_herramienta">
+			<img src="./images/icon_estaciones.png" class="icon_pronostico" onclick="ir()">
+			<h3 onclick="ir()">MONITOREO (ESTACIONES METEREOLÓGICAS)</h3>
+		</article>
+		<article>
+			<div class="button_next">
+					<a href="./etapa.html"><input type="button" name="regresar" value="◂ regresar"/></a>
+					<input type="button" name="siguiente" value="siguiente ▸" onclick="ir()" />
+				</div>
+		</article>
+	</section>
+		<footer class="footer">
+        <div class="menu_footer contenedor">
+            <ul>
+                <li>
+                    <a href="./index.html"><img src="./images/logo.jpg"></a>
+                </li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info_footer contenedor">
+            <h5>
+FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+            <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
+        </div>
+        <div class="logos">
+          <div class="contenedor">
+            <h3>CON EL APOYO DE:</h3>
+            <div class="fmi"></div>
+          </div>
+        </div>
+    </footer>
+<script type="text/javascript">
+	function ir(){
+        window.open("http://190.60.252.91:2911/climatefed#");
+      }
+</script>
+</body>
+</html>

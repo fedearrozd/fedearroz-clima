@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./css/style-etapa.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:700" rel="stylesheet">
+    <title>Escoja su etapa</title>
+</head>
+<body>
+    <a href="ayuda.pdf" target="_blank" class="help_button"></a>
+    <section class="logo">
+        <header class="contenedor header">
+            <figure>
+                <a href="./index.html"><img src="./images/logo.jpg"></a>
+            </figure>
+        </header>
+    </section>
+    <section class="portada">
+        <div class="contenedor">
+            <h1 class="title">¡Bienvenido!</h1>
+            <h3 class="subtitle" id="subtitle">Espinal, Tolima</h3>
+        </div>
+    </section>
+    <section class="contenedor">
+        <h2 class="description">Las condiciones meteorológicas son importantes porque influyen, no solamente, en el crecimiento y desarrollo de la planta de arroz, si no también, en la ejecución y la
+efectividad de las labores agronómicas, es decir, influyen en la productividad del cultivo.
+Sin embargo, no siempre influyen de la misma manera, esto depende de la etapa del
+cultivo.
+		</h2>
+    </section>
+    <section class="etapa contenedor">
+        <h3 class="title_etapa_seleccion">¿En qué etapa de desarrollo se encuentra su cultivo?</h3>
+        <article>
+            <a href="#antes_background"><h3 class="antes_button">Antes de la siembra</h3></a>
+            <a href="#durante_background"><h3 class="durante_button">Etapa <br/> vegetativa</h3></a>
+            <a href="#despues_background"><h3 class="despues_button">Etapa reproductiva y maduración</h3></a>
+            <div class="barra_horizontal contenedor"></div>
+        </article>
+    </section>
+    <section class="contenedor">
+         <img src="./images/ciclo_del_arroz_fases.jpg" class="ciclo">
+    </section>
+    <section class="antes_background" id="antes_background">
+        <div class="contenedor">
+            <h1>Antes de la siembra</h1>
+            <h3>¿Cuando sembrar?</h3>
+        </div>
+    </section>
+    <section class="contenedor antes_text" id="antes">
+        <article>
+            <h3>La preparación del suelo, la <strong>planificación</strong> de siembra y la siembra, son labores agronómicas fundamentales para el éxito de la campaña. Con la ayuda de información meteorológica usted puede lograr que su cultivo coincida con períodos con condiciones climáticas óptimas para la variedad que va a sembrar, y que las labores de siembra se realicen bajo condiciones climáticas que garanticen el establecimiento del cultivo.</h3>
+        </article>
+        <article class="list_text">
+            <div>
+                <img src="./images/icon_antes.png">
+                <div>
+                    <a onclick="irAHistorico()"><img src="./images/icon_estaciones_antes.png"><h3>Conozca el clima histórico de la región</h3></a>
+                    <a href="variedad_antes.html"><img src="./images/icon_prediccion_antes.png"><h3>Selección de variedad y época de siembra</h3></a>
+                    <a onclick="irAPronostico('antes')"><img src="./images/icon_prediccion_antes.png"><h3>Pronostico climático a 6 meses</h3></a>
+                    <a href="semana_antes.html"><img src="./images/icon_tiempo_antes.png"><h3 class="conozca_text">Pronóstico del tiempo para los próximos días</h3></a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="durante_background" id="durante_background">
+        <div class="contenedor">
+            <h1>Etapa Vegetativa</h1>
+            <h3>¿Cuándo abono? ¿Cuándo riego? ¿Cuándo aplico?
+</h3>
+        </div>
+    </section>
+    <section class="contenedor antes_text" id="durante">
+        <article>
+            <h3>En esta etapa es importante garantizar la eficiencia de las labores de fertilización y de aplicación de agroquímicos (herbicidas, insecticidas y fungicidas). Las condiciones meteorológicas presentes, durante y después de la aplicación, pueden reducir la efectividad de dichas labores y conllevar a una afectación directa en la rentabilidad y la productividad del cultivo.</h3>
+            <ul>
+                    <li>Usted puede considerar los pronósticos meteorológicos para programar las diferentes labores agronómicas de acuerdo a las condiciones óptimas requeridas. </li>
+                    <li>
+                        Usted puede verificar el éxito de sus actividades monitoreando las condiciones atmosféricas que se presentaron después de la labor realizad
+                    </li>
+                    <li>
+                        Usted puede ajustar el plan de manejo del agua de acuerdo al clima que se prevé para los siguientes meses.
+                    </li>
+                </ul>
+        </article>
+        <article class="list_text durante">
+            <div>
+                <img src="./images/icon_durante.png">
+                <div>
+                    <a href="evaluacion_vegetativa.html"><img src="./images/icon_estaciones_durante.png"><h3 style="font-size: 12px;">Evaluación de las condiciones climáticas actuales, monitoreo de labores y desarrollo del cultivo</h3></a>
+                    <a href="tiempo_atmosferico.html"><img src="./images/icon_satelital_durante.png"><h3>Tiempo Atmosférico Actual</h3></a>
+                    <a href="semana_durante.html"><img src="./images/icon_tiempo_durante.png"><h3>Pronóstico del tiempo para los próximos días</h3></a>
+                    <a onclick="irAPronostico('durante')"><img src="./images/icon_prediccion_durante.png"><h3>Pronostico climático a 6 meses</h3></a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="despues_background" id="despues_background">
+        <div class="contenedor">
+            <h1>Etapa reproductiva y maduración</h1>
+            <h3>¿Cuándo abono? ¿Cuándo riego? ¿Cuándo cosecho?</h3>
+        </div>
+    </section>
+    <section class="contenedor antes_text" id="despues">
+        <article>
+            <h3>En esta etapa es importante garantizar la eficiencia de las labores de fertilización y de aplicación de agroquímicos (insecticidas y fungicidas) y evitar sobrecostos en las labores de cosecha causados por la lluvia. Las condiciones meteorológicas presentes durante y posterior a la aplicación pueden reducir la efectividad de las aplicaciones y ocasionar retrasos en la cosecha, afectando directamente la calidad, productividad y rentabilidad del cultivo. </h3>
+            <ul>
+                <li>Usted puede considerar los pronósticos meteorológicos para programar las diferentes labores agronómicas de acuerdo a las condiciones óptimas requeridas. 
+                </li>
+                <li>
+                    Usted puede verificar el éxito de sus actividades monitoreando las condiciones atmosféricas que se presentaron después de la labor realizada.
+                </li>
+                <li>
+                    Usted puede programar la cosecha según pronósticos y reducir los sobrecostos que implica la lluvia al momento de cosechar.
+                </li>
+            </ul>
+        </article>
+        <article class="list_text despues">
+            <div>
+                <img src="./images/icon_despues.png">
+                <div>
+                    <a href="evaluacion_reproductiva.html"><img src="./images/icon_estaciones_despues.png"><h3 style="font-size: 12px;">Evaluación de las condiciones climáticas actuales, monitoreo de labores y desarrollo del cultivo</h3></a>
+                    <a href="tiempo_atmosferico.html"><img src="./images/icon_satelital_despues.png"><h3>Tiempo Atmosférico Actual</h3></a>
+                    <a href="semana_reproductiva.html"><img src="./images/icon_tiempo_despues.png"><h3>Pronóstico del tiempo para los próximos días</h3></a>
+                </div>
+            </div>
+        </article>
+    </section>
+        <footer class="footer">
+        <div class="menu_footer contenedor">
+            <ul>
+                <li>
+                    <a href="./index.html"><img src="./images/logo.jpg"></a>
+                </li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info_footer contenedor">
+            <h5>
+FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+            <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
+        </div>
+        <div class="logos">
+          <div class="contenedor">
+            <h3>CON EL APOYO DE:</h3>
+            <div class="fmi"></div>
+          </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        var municipio;
+        var departamento;
+        var zona;
+        var paramstr = window.location.search.substr(1);
+        var paramarr = paramstr.split ("&");
+        var params = {};
+
+        for ( var i = 0; i < paramarr.length; i++) {
+            var tmparr = paramarr[i].split("=");
+            params[i] = replaceAll(tmparr[1],"%20", " ");
+        }
+        var sub = document.getElementById('subtitle');
+        console.log(sub.value);
+        sub.innerHTML = params[0]+" , "+params[1];
+        municipio = params[0];
+        departamento = params[1];
+        zona = params[2];
+        function replaceAll(text, c1, c2){
+        while(text.indexOf(c1)>0){
+          text = text.replace(c1,c2);
+        }
+        return text;
+      }
+      function irAHistorico(){
+        window.location="historico_antes.html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
+      }
+      function irAPronostico(etapa){
+        window.location="pronostico_"+etapa+".html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
+      }
+    </script>
+</body>
+
+</html>

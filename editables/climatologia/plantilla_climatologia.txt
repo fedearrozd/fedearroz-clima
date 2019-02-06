@@ -1,0 +1,6 @@
+#Precip,Precipitacion
+#Temp_max,Temperatura. Máx.
+#Temp_min,Temperatura. Mín.
+#Luz,Brillo Solar
+#Lluvia,N. días de lluvia
+#Humedad,Humedad Relativa

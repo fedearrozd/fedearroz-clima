@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style-despues.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+	<title>Pronóstico climático a 6 meses</title>
+</head>
+<body>
+	<a href="ayuda.pdf" target="_blank" class="help_button"></a>
+	<section class="logo">
+		<header class="contenedor header">
+			<figure>
+				<a href="./index.html"><img src="./images/logo.jpg"></a>
+			</figure>
+		</header>
+	</section>
+	<section class="portada">
+		<div class="contenedor"></div>		
+	</section>
+	<section class="contenedor section1">
+		<article class="section1_article1">
+			<img class="img_title" src="./images/icon_despues.png">
+			<h1 class="title_tiempo">PRONÓSTICO CLIMÁTICO A 6 MESES</h1>	
+		</article>
+		<article class="section1_article2">
+			<h3>La Predicción climática a seis meses brinda información de utilidad sobre la alteración de la precipitación con respecto al comportamiento histórico, si serán meses con lluvias excesivas, normales o deficitarias, junto a esta información el comportamiento de las demás variables en términos de promedios mensuales</h3>
+		</article>
+	</section>
+	<section class="contenedor section2">
+		<article>
+			<img src="./images/icon_prediccion.png" class="icon_pronostico">
+			<h3>PREDICCIÓN CLIMÁTICA Y PRONÓSTICO DE RENDIMIENTO</h3>
+		</article>
+		<article class="list">
+			<h3>Escoja el Municipio más cercano a usted</h3>
+			<select id="address" type="text" placeholder="Espinal, Tolima">
+	            <option value="Casanare, Aguazul, Aguazul">Casanare, Aguazul, Aguazul</option>
+	            <option value="Casanare, Yopal, Aeropuerto Yopal">Casanare, Yopal, Aeropuerto Yopal</option>
+	            <option value="Casanare, Orocue, Modulos">Casanare, Orocue, Modulos</option>
+	            <option value="Cordoba, Monteria, Universidad de Cordoba">Córdoba, Monteria, Universidad de Cordoba</option>
+	            <option value="Cordoba, Cereté, Turipana">Córdoba, Cereté, Turipana</option>
+	            <option value="Cordoba, Lorica, La Doctrina">Córdoba, Lorica, La Doctrina</option>
+	          <option value="Tolima, Saldana, Jabalcon">Tolima, Saldana, Jabalcon</option>
+	            <option value="Tolima, Espinal, Nataima">Tolima, Espinal, Nataima</option>
+	            <option value="Tolima, Ibague, Aeropuerto Perales">Tolima, Ibague, Aeropuerto Perales</option>
+	            <option value="Tolima, Ambalema, El Salto">Tolima, Ambalema, El Salto</option>
+	            <option value="Huila, Neiva, Aeropuerto Benito Salas">Huila, Neiva, Aeropuerto Benito Salas</option>
+	            <option value="Huila, Palermo, El Juncal">Huila, Palermo, El Juncal</option>
+	          <option value="Huila, Campoalegre, Los Rosales">Huila, Campoalegre, Los Rosales</option>
+	            <option value="Meta, Granada, La Holanda">Meta, Granada, La Holanda</option>
+	            <option value="Meta, Puerto Lopez, Hacienda Las Margaritas">Meta, Puerto Lopez, Hacienda Las Margaritas</option>
+	          <option value="Meta, Villavicencio, La Libertad">Meta, Villavicencio, La Libertad</option>
+	            <option value="Meta, Cumaral, Hacienda la Cabana">Meta, Cumaral, Hacienda la Cabana</option>
+	            <option value="Sucre, Majagual, Majagual">Sucre, Majagual, Majagual</option>
+	            <option value="Sucre, San Marcos, Hacienda Eureka">Sucre, San Marcos, Hacienda Eureka</option>
+	        </select>
+		</article>
+		<article class="boletin">
+			<h5>BOLETÍN AGROCLIMÁTICO</h5>
+			<div onclick="downloadBoletin()">
+				<h6>Descargue aquí</h6>
+				<img src="./images/icon_download.png">
+			</div>
+		</article>
+		<article>
+			<div class="button_next">
+					<a href="./etapa.html"><input type="button" name="regresar" value="◂ regresar"/></a>
+					<input type="button" name="siguiente" value="siguiente ▸" onclick="ir()" />
+				</div>
+		</article>
+	</section>
+		<footer class="footer">
+        <div class="menu_footer contenedor">
+            <ul>
+                <li>
+                    <a href="./index.html"><img src="./images/logo.jpg"></a>
+                </li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info_footer contenedor">
+            <h5>
+FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+            <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
+        </div>
+        <div class="logos">
+          <div class="contenedor">
+            <h3>CON EL APOYO DE:</h3>
+            <div class="fmi"></div>
+          </div>
+        </div>
+    </footer>
+<script type="text/javascript">
+	function ir(){
+		var sel = document.getElementById('address').value;
+		var a = sel.split(",");
+		for(i = 0; i< a.length ; i++){
+			a[i] = a[i].trim();
+		}
+		console.log(a);
+        window.location="https://pronosticos.aclimatecolombia.org/Clima/"+a[0]+"/"+a[1]+"/"+a[2];
+      }
+      function replaceAll(str, term, replacement) {
+      		var i = str.indexOf(term);
+      		while (i>=0) {
+      			str  = str.replace(term, replacement);
+      			i = str.indexOf(term);
+      		}
+  			return str;
+		}
+				var paramstr = window.location.search.substr(1);
+        var paramarr = paramstr.split ("&");
+        var params = {};
+        for ( var i = 0; i < paramarr.length; i++) {
+            var tmparr = paramarr[i].split("=");
+            params[i] = replaceAll(tmparr[1],"%20", "_");
+        }
+        let municipio = params[0].toLowerCase();
+        let departamento = params[1].toLowerCase();
+        let zona = params[2].toLowerCase();
+        function downloadBoletin(){
+		window.open("./boletines/"+departamento+"_boletin_agosto_asondef.pdf");
+		}
+</script>
+</body>
+</html>

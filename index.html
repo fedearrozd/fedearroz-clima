@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="./css/style-index.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+	<title>¿Va a llover?</title>
+</head>
+<body>
+	<section class="logo">
+		<header class="contenedor header">
+			<figure>
+				<a href="./index.html"><img src="./images/logo.jpg"></a>
+			</figure>
+		</header>
+	</section>
+	<section class="portada">
+		<div class="contenedor">
+			<h1 class="title">¿Va a llover o no?</h1>
+			<h3 class="subtitle">Servicio Climático para cultivo de Arroz</h3>
+		</div>
+		
+	</section>
+	<section>
+		<nav class="menu">
+            <ul class="contenedor">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+                <a href="videos.html"><li>Ayudas Audiovisuales</li></a>
+                <a href="modo_avanzado.html"><li>Modo Avanzado</li></a>
+            </ul>
+        </nav>
+	</section>
+	<section class="contenedor section4">
+		<h2 class="description">Esta pregunta simple no tiene una respuesta sencilla. Por tal motivo, lo invitamos a que explore esta plataforma que le ayudará a obtener respuesta a sus inquietudes.<p></p>
+Aquí encontrará apoyo para tomar decisiones climáticamente inteligentes respecto a sus
+
+labores de cultivo.</h2>
+		<article class="mapa">
+      <div id="clima" name="imagenes"></div>
+      <div id="actividades" name="imagenes"></div>
+			<div class="map_frame">
+				<div id="map"></div>
+			</div>
+			<div class="text_frame">
+				<h1>¡Empiece aquí!</h1>
+				<h3>¿Dónde se ubican sus lotes? (Municipio, Departamento)</h3>
+        <div class="inputs">
+          <input list="estaciones" id="ubicacion" type="text" placeholder="Espinal, Tolima">
+            <datalist id="estaciones">
+              <option value="Medellin, Antioquia">
+              <option value="Abejorral, Antioquia">
+              <option value="Abriaqui, Antioquia">
+              <option value="Alejandria, Antioquia">
+              <option value="Amalfi, Antioquia">
+              <option value="Andes, Antioquia">
+              <option value="Angostura, Antioquia">
+              <option value="Anori, Antioquia">
+              <option value="Santafe de antioquia, Antioquia">
+              <option value="Anza, Antioquia">
+              <option value="Apartado, Antioquia-Uraba">
+              <option value="Arboletes, Antioquia-Uraba">
+              <option value="Argelia, Antioquia">
+              <option value="Armenia, Antioquia">
+              <option value="Barbosa, Antioquia">
+              <option value="Belmira, Antioquia">
+              <option value="Bello, Antioquia-Uraba">
+              <option value="Betania, Antioquia">
+              <option value="Betulia, Antioquia">
+              <option value="Ciudad bolivar, Antioquia">
+              <option value="Briceño, Antioquia">
+              <option value="Buritica, Antioquia">
+              <option value="Caceres, Antioquia-Bajo-Cauca">
+              <option value="Caicedo, Antioquia">
+              <option value="Caldas, Antioquia">
+              <option value="Cañasgordas, Antioquia">
+              <option value="Caramanta, Antioquia">
+              <option value="Carepa, Antioquia-Uraba">
+              <option value="Caucasia, Antioquia-Bajo-Cauca">
+              <option value="Chigorodo, Antioquia-Uraba">
+              <option value="Concordia, Antioquia">
+              <option value="Entrerrios, Antioquia">
+              <option value="Fredonia, Antioquia">
+              <option value="Frontino, Antioquia">
+              <option value="Giraldo, Antioquia">
+              <option value="Girardota, Antioquia">
+              <option value="Gomez plata, Antioquia">
+              <option value="Granada, Antioquia">
+              <option value="Heliconia, Antioquia">
+              <option value="Ituango, Antioquia">
+              <option value="Jardin, Antioquia">
+              <option value="Jerico, Antioquia">
+              <option value="La union, Antioquia">
+              <option value="Liborina, Antioquia">
+              <option value="Marinilla, Antioquia">
+              <option value="Montebello, Antioquia">
+              <option value="Mutata, Antioquia-Uraba">
+              <option value="Necocli, Antioquia-Uraba">
+              <option value="Nechi, Antioquia-Bajo-Cauca">
+              <option value="Olaya, Antioquia">
+              <option value="Peðol, Antioquia">
+              <option value="Peque, Antioquia">
+              <option value="Pueblorrico, Antioquia">
+              <option value="Puerto berrio, Antioquia">
+              <option value="Puerto nare, Antioquia">
+              <option value="Remedios, Antioquia">
+              <option value="Rionegro, Antioquia">
+              <option value="Sabanalarga, Antioquia">
+              <option value="Salgar, Antioquia">
+              <option value="San andres de cuerquia, Antioquia">
+              <option value="San carlos, Antioquia">
+              <option value="San francisco, Antioquia">
+              <option value="San jeronimo, Antioquia">
+              <option value="San juan de uraba, Antioquia-Uraba">
+              <option value="San rafael, Antioquia">
+              <option value="San roque, Antioquia">
+              <option value="San vicente, Antioquia">
+              <option value="Santa rosa de osos, Antioquia">
+              <option value="Santo domingo, Antioquia">
+              <option value="El santuario, Antioquia">
+              <option value="Segovia, Antioquia">
+              <option value="Sonson, Antioquia">
+              <option value="Tamesis, Antioquia">
+              <option value="Taraza, Antioquia-Bajo-Cauca">
+              <option value="Titiribi, Antioquia">
+              <option value="Toledo, Antioquia">
+              <option value="Turbo, Antioquia-Uraba">
+              <option value="Urrao, Antioquia">
+              <option value="Valdivia, Antioquia">
+              <option value="Vegachi, Antioquia">
+              <option value="Venecia, Antioquia">
+              <option value="Vigia del fuerte, Antioquia-Uraba">
+              <option value="Yarumal, Antioquia">
+              <option value="Yolombo, Antioquia">
+              <option value="Yondo, Antioquia">
+              <option value="Zaragoza, Antioquia-Bajo-Cauca">
+              <option value="Barranquilla, Atlantico">
+              <option value="Baranoa, Atlantico">
+              <option value="Campo de la cruz, Atlantico">
+              <option value="Candelaria, Atlantico">
+              <option value="Juan de acosta, Atlantico">
+              <option value="Luruaco, Atlantico">
+              <option value="Manati, Atlantico">
+              <option value="Piojo, Atlantico">
+              <option value="Polonuevo, Atlantico">
+              <option value="Ponedera, Atlantico">
+              <option value="Puerto colombia, Atlantico">
+              <option value="Repelon, Atlantico">
+              <option value="Sabanalarga, Atlantico">
+              <option value="Santa lucia, Atlantico">
+              <option value="Soledad, Atlantico">
+              <option value="Suan, Atlantico">
+              <option value="Tubara, Atlantico">
+              <option value="Usiacuri, Atlantico">
+              <option value="Bogota, d.c., BOGOTA D.C.">
+              <option value="Cartagena, Bolivar-Norte">
+              <option value="Achi, Bolivar-Medio">
+              <option value="Arenal, Bolivar-Sur">
+              <option value="Arjona, Bolivar-Norte">
+              <option value="Barranco de loba, Bolivar-Medio">
+              <option value="Cicuco, Bolivar-Medio">
+              <option value="Cordoba, Bolivar-Medio">
+              <option value="El carmen de bolivar, Bolivar-Norte">
+              <option value="El guamo, Bolivar-Norte">
+              <option value="Hatillo de loba, Bolivar-Medio">
+              <option value="Magangue, Bolivar-Medio">
+              <option value="Mahates, Bolivar-Norte">
+              <option value="Margarita, Bolivar-Medio">
+              <option value="Maria la baja, Bolivar-Norte">
+              <option value="Montecristo, Bolivar-Medio">
+              <option value="Mompos, Bolivar-Sur">
+              <option value="Pinillos, Bolivar-Medio">
+              <option value="Regidor, Bolivar-Sur">
+              <option value="Rio viejo, Bolivar-Sur">
+              <option value="San estanislao, Bolivar-Norte">
+              <option value="San fernando, Bolivar-Medio">
+              <option value="San jacinto, Bolivar-Norte">
+              <option value="San jacinto del cauca, Bolivar-Medio">
+              <option value="San juan nepomuceno, Bolivar-Norte">
+              <option value="San martin de loba, Bolivar-Medio">
+              <option value="San pablo, Bolivar-Sur">
+              <option value="Santa catalina, Bolivar-Norte">
+              <option value="Santa rosa del sur, Bolivar-Sur">
+              <option value="Simiti, Bolivar-Sur">
+              <option value="Tiquisio, Bolivar-Medio">
+              <option value="Turbaco, Bolivar-Norte">
+              <option value="Zambrano, Bolivar-Norte">
+              <option value="Tunja, Boyaca">
+              <option value="Almeida, Boyaca">
+              <option value="Aquitania, Boyaca">
+              <option value="Arcabuco, Boyaca">
+              <option value="Berbeo, Boyaca">
+              <option value="Beteitiva, Boyaca">
+              <option value="Boavita, Boyaca">
+              <option value="Buenavista, Boyaca">
+              <option value="Campohermoso, Boyaca">
+              <option value="Cerinza, Boyaca">
+              <option value="Chinavita, Boyaca">
+              <option value="Chiscas, Boyaca">
+              <option value="Chita, Boyaca">
+              <option value="Chivata, Boyaca">
+              <option value="Combita, Boyaca">
+              <option value="Coper, Boyaca">
+              <option value="Covarachia, Boyaca">
+              <option value="Cuitiva, Boyaca">
+              <option value="Chiquiza, Boyaca">
+              <option value="Chivor, Boyaca">
+              <option value="Duitama, Boyaca">
+              <option value="El cocuy, Boyaca">
+              <option value="Firavitoba, Boyaca">
+              <option value="Gachantiva, Boyaca">
+              <option value="Gameza, Boyaca">
+              <option value="Garagoa, Boyaca">
+              <option value="Guayata, Boyaca">
+              <option value="Gsican, Boyaca">
+              <option value="Iza, Boyaca">
+              <option value="Jenesano, Boyaca">
+              <option value="Jerico, Boyaca">
+              <option value="La uvita, Boyaca">
+              <option value="Villa de leyva, Boyaca">
+              <option value="Macanal, Boyaca">
+              <option value="Miraflores, Boyaca">
+              <option value="Mongua, Boyaca">
+              <option value="Mongui, Boyaca">
+              <option value="Moniquira, Boyaca">
+              <option value="Motavita, Boyaca">
+              <option value="Muzo, Boyaca">
+              <option value="Nobsa, Boyaca">
+              <option value="Nuevo colon, Boyaca">
+              <option value="Oicata, Boyaca">
+              <option value="Otanche, Boyaca">
+              <option value="Pachavita, Boyaca">
+              <option value="Paez, Boyaca">
+              <option value="Paipa, Boyaca">
+              <option value="Pajarito, Boyaca">
+              <option value="Pauna, Boyaca">
+              <option value="Pesca, Boyaca">
+              <option value="Puerto boyaca, Boyaca">
+              <option value="Quipama, Boyaca">
+              <option value="Ramiriqui, Boyaca">
+              <option value="Raquira, Boyaca">
+              <option value="Rondon, Boyaca">
+              <option value="Saboya, Boyaca">
+              <option value="Samaca, Boyaca">
+              <option value="San luis de gaceno, Boyaca">
+              <option value="San mateo, Boyaca">
+              <option value="San pablo de borbur, Boyaca">
+              <option value="Santana, Boyaca">
+              <option value="Santa maria, Boyaca">
+              <option value="Santa rosa de viterbo, Boyaca">
+              <option value="Santa sofia, Boyaca">
+              <option value="Sativanorte, Boyaca">
+              <option value="Siachoque, Boyaca">
+              <option value="Socota, Boyaca">
+              <option value="Socha, Boyaca">
+              <option value="Sogamoso, Boyaca">
+              <option value="Somondoco, Boyaca">
+              <option value="Sotaquira, Boyaca">
+              <option value="Soraca, Boyaca">
+              <option value="Susacon, Boyaca">
+              <option value="Sutatenza, Boyaca">
+              <option value="Tasco, Boyaca">
+              <option value="Tenza, Boyaca">
+              <option value="Tibana, Boyaca">
+              <option value="Tibasosa, Boyaca">
+              <option value="Toca, Boyaca">
+              <option value="Turmeque, Boyaca">
+              <option value="Tuta, Boyaca">
+              <option value="Tutaza, Boyaca">
+              <option value="Umbita, Boyaca">
+              <option value="Ventaquemada, Boyaca">
+              <option value="Zetaquira, Boyaca">
+              <option value="Manizales, Caldas">
+              <option value="Aguadas, Caldas">
+              <option value="Anserma, Caldas">
+              <option value="La dorada, Caldas">
+              <option value="Manzanares, Caldas">
+              <option value="Marquetalia, Caldas">
+              <option value="Marulanda, Caldas">
+              <option value="Neira, Caldas">
+              <option value="Norcasia, Caldas">
+              <option value="Pacora, Caldas">
+              <option value="Palestina, Caldas">
+              <option value="Pensilvania, Caldas">
+              <option value="Riosucio, Caldas">
+              <option value="Salamina, Caldas">
+              <option value="Samana, Caldas">
+              <option value="Victoria, Caldas">
+              <option value="Villamaria, Caldas">
+              <option value="Viterbo, Caldas">
+              <option value="Florencia, Caqueta">
+              <option value="Belen de los andaquies, Caqueta">
+              <option value="Cartagena del chaira, Caqueta">
+              <option value="El doncello, Caqueta">
+              <option value="Milan, Caqueta">
+              <option value="Puerto rico, Caqueta">
+              <option value="San jose del fragua, Caqueta">
+              <option value="San vicente del caguan, Caqueta">
+              <option value="Solano, Caqueta">
+              <option value="Valparaiso, Caqueta">
+              <option value="Popayan, Cauca">
+              <option value="Almaguer, Cauca">
+              <option value="Balboa, Cauca">
+              <option value="Bolivar, Cauca">
+              <option value="Buenos aires, Cauca">
+              <option value="Cajibio, Cauca">
+              <option value="Caldono, Cauca">
+              <option value="Caloto, Cauca">
+              <option value="Corinto, Cauca">
+              <option value="El tambo, Cauca">
+              <option value="Guapi, Cauca">
+              <option value="Inza, Cauca">
+              <option value="La sierra, Cauca">
+              <option value="La vega, Cauca">
+              <option value="Lopez, Cauca">
+              <option value="Mercaderes, Cauca">
+              <option value="Miranda, Cauca">
+              <option value="Morales, Cauca">
+              <option value="Paez, Cauca">
+              <option value="Patia, Cauca">
+              <option value="Piendamo, Cauca">
+              <option value="Puerto tejada, Cauca">
+              <option value="Purace, Cauca">
+              <option value="Rosas, Cauca">
+              <option value="San sebastian, Cauca">
+              <option value="Santander de quilichao, Cauca">
+              <option value="Santa rosa, Cauca">
+              <option value="Silvia, Cauca">
+              <option value="Sotara, Cauca">
+              <option value="Suarez, Cauca">
+              <option value="Timbio, Cauca">
+              <option value="Timbiqui, Cauca">
+              <option value="Toribio, Cauca">
+              <option value="Totoro, Cauca">
+              <option value="Villa rica, Cauca">
+              <option value="Valledupar, Cesar-Norte">
+              <option value="Aguachica, Cesar-Sur">
+              <option value="Agustin codazzi, Cesar-Norte">
+              <option value="Astrea, Cesar-Medio">
+              <option value="Becerril, Cesar-Medio">
+              <option value="Bosconia, Cesar-Norte">
+              <option value="Chimichagua, Cesar-Medio">
+              <option value="Chiriguana, Cesar-Medio">
+              <option value="Curumani, Cesar-Medio">
+              <option value="El paso, Cesar-Medio">
+              <option value="Gamarra, Cesar-Sur">
+              <option value="La gloria, Cesar-Sur">
+              <option value="La jagua de ibirico, Cesar-Medio">
+              <option value="Manaure, Cesar-Norte">
+              <option value="Pailitas, Cesar-Medio">
+              <option value="Pelaya, Cesar-Medio">
+              <option value="Pueblo bello, Cesar-Norte">
+              <option value="Rio de oro, Cesar-Sur">
+              <option value="San alberto, Cesar-Sur">
+              <option value="San diego, Cesar-Norte">
+              <option value="San martin, Cesar-Sur">
+              <option value="Tamalameque, Cesar-Medio">
+              <option value="Monteria, Cordoba-Medio">
+              <option value="Ayapel, Cordoba-Medio">
+              <option value="Buenavista, Cordoba-Sur">
+              <option value="Canalete, Cordoba-Norte">
+              <option value="Cerete, Cordoba-Norte">
+              <option value="Chima, Cordoba-Norte">
+              <option value="Chinu, Cordoba-Norte">
+              <option value="Cienaga de oro, Cordoba-Norte">
+              <option value="Cotorra, Cordoba-Norte">
+              <option value="La apartada, Cordoba-Sur">
+              <option value="Lorica, Cordoba-Norte">
+              <option value="Momil, Cordoba-Norte">
+              <option value="Montelibano, Cordoba-Sur">
+              <option value="Planeta rica, Cordoba-Medio">
+              <option value="Pueblo nuevo, Cordoba-Medio">
+              <option value="Puerto escondido, Cordoba-Norte">
+              <option value="Puerto libertador, Cordoba-Sur">
+              <option value="Sahagun, Cordoba-Norte">
+              <option value="San andres sotavento, Cordoba-Norte">
+              <option value="San antero, Cordoba-Norte">
+              <option value="San bernardo del viento, Cordoba-Norte">
+              <option value="San carlos, Cordoba-Norte">
+              <option value="San jose de ure, Cordoba-Sur">
+              <option value="San pelayo, Cordoba-Norte">
+              <option value="Tierralta, Cordoba-Sur">
+              <option value="Valencia, Cordoba-Sur">
+              <option value="Alban, Cundinamarca">
+              <option value="Anapoima, Cundinamarca">
+              <option value="Anolaima, Cundinamarca">
+              <option value="Bojaca, Cundinamarca">
+              <option value="Cabrera, Cundinamarca">
+              <option value="Caparrapi, Cundinamarca">
+              <option value="Caqueza, Cundinamarca">
+              <option value="Carmen de carupa, Cundinamarca">
+              <option value="Chaguani, Cundinamarca">
+              <option value="Chia, Cundinamarca">
+              <option value="Choachi, Cundinamarca">
+              <option value="Choconta, Cundinamarca">
+              <option value="Cucunuba, Cundinamarca">
+              <option value="El colegio, Cundinamarca">
+              <option value="El peñon, Cundinamarca">
+              <option value="Facatativa, Cundinamarca">
+              <option value="Fomeque, Cundinamarca">
+              <option value="Funza, Cundinamarca">
+              <option value="Fuquene, Cundinamarca">
+              <option value="Fusagasuga, Cundinamarca">
+              <option value="Gachala, Cundinamarca">
+              <option value="Gachancipa, Cundinamarca">
+              <option value="Gacheta, Cundinamarca">
+              <option value="Gama, Cundinamarca">
+              <option value="Guacheta, Cundinamarca">
+              <option value="Guaduas, Cundinamarca">
+              <option value="Guasca, Cundinamarca">
+              <option value="Guatavita, Cundinamarca">
+              <option value="Guayabetal, Cundinamarca">
+              <option value="Gutierrez, Cundinamarca">
+              <option value="Jerusalen, Cundinamarca">
+              <option value="Junin, Cundinamarca">
+              <option value="La palma, Cundinamarca">
+              <option value="Lenguazaque, Cundinamarca">
+              <option value="Macheta, Cundinamarca">
+              <option value="Madrid, Cundinamarca">
+              <option value="Manta, Cundinamarca">
+              <option value="Medina, Cundinamarca">
+              <option value="Mosquera, Cundinamarca">
+              <option value="Nariño, Cundinamarca">
+              <option value="Nilo, Cundinamarca">
+              <option value="Nocaima, Cundinamarca">
+              <option value="Venecia, Cundinamarca">
+              <option value="Pacho, Cundinamarca">
+              <option value="Paime, Cundinamarca">
+              <option value="Pandi, Cundinamarca">
+              <option value="Paratebueno, Cundinamarca">
+              <option value="Pasca, Cundinamarca">
+              <option value="Puerto salgar, Cundinamarca">
+              <option value="San bernardo, Cundinamarca">
+              <option value="San cayetano, Cundinamarca">
+              <option value="San francisco, Cundinamarca">
+              <option value="San juan de rio seco, Cundinamarca">
+              <option value="Sasaima, Cundinamarca">
+              <option value="Sesquile, Cundinamarca">
+              <option value="Sibate, Cundinamarca">
+              <option value="Simijaca, Cundinamarca">
+              <option value="Soacha, Cundinamarca">
+              <option value="Sopo, Cundinamarca">
+              <option value="Suesca, Cundinamarca">
+              <option value="Supata, Cundinamarca">
+              <option value="Susa, Cundinamarca">
+              <option value="Tabio, Cundinamarca">
+              <option value="Tausa, Cundinamarca">
+              <option value="Tenjo, Cundinamarca">
+              <option value="Tibacuy, Cundinamarca">
+              <option value="Tocaima, Cundinamarca">
+              <option value="Ubala, Cundinamarca">
+              <option value="Ubaque, Cundinamarca">
+              <option value="Villa de san diego de ubate, Cundinamarca">
+              <option value="Utica, Cundinamarca">
+              <option value="Villapinzon, Cundinamarca">
+              <option value="Viota, Cundinamarca">
+              <option value="Yacopi, Cundinamarca">
+              <option value="Zipaquira, Cundinamarca">
+              <option value="Quibdo, Choco">
+              <option value="Acandi, Choco">
+              <option value="Alto baudo, Choco">
+              <option value="Bahia solano, Choco">
+              <option value="Bojaya, Choco">
+              <option value="El canton del san pablo, Choco">
+              <option value="Carmen del darien  , Choco">
+              <option value="Certegui, Choco">
+              <option value="Condoto, Choco">
+              <option value="El carmen, Choco">
+              <option value="El litoral del san juan, Choco">
+              <option value="Istmina, Choco">
+              <option value="Lloro, Choco">
+              <option value="Medio atrato, Choco">
+              <option value="Medio san juan, Choco">
+              <option value="Novita, Choco">
+              <option value="Rio quito, Choco">
+              <option value="Riosucio, Choco">
+              <option value="San jose del palmar, Choco">
+              <option value="Unguia, Choco">
+              <option value="Neiva, Huila-Norte">
+              <option value="Acevedo, Huila-Sur">
+              <option value="Agrado, Huila-Sur">
+              <option value="Aipe, Huila-Norte">
+              <option value="Algeciras, Huila-Sur">
+              <option value="Altamira, Huila-Sur">
+              <option value="Baraya, Huila-Norte">
+              <option value="Campoalegre, Huila-Medio">
+              <option value="Colombia, Huila-Norte">
+              <option value="Elias, Huila-Sur">
+              <option value="Garzon, Huila-Sur">
+              <option value="Gigante, Huila-Medio">
+              <option value="Guadalupe, Huila-Sur">
+              <option value="Hobo, Huila-Sur">
+              <option value="Iquira, Huila-Medio">
+              <option value="Isnos, Huila-Sur">
+              <option value="La argentina, Huila-Sur">
+              <option value="La plata, Huila-Sur">
+              <option value="Nataga, Huila-Sur">
+              <option value="Oporapa, Huila-Sur">
+              <option value="Paicol, Huila-Medio">
+              <option value="Palermo, Huila-Medio">
+              <option value="Palestina, Huila-Sur">
+              <option value="Pital, Huila-Sur">
+              <option value="Pitalito, Huila-Sur">
+              <option value="Rivera, Huila-Medio">
+              <option value="Saladoblanco, Huila-Sur">
+              <option value="San agustin, Huila-Sur">
+              <option value="Santa maria, Huila-Sur">
+              <option value="Suaza, Huila-Sur">
+              <option value="Tarqui, Huila-Sur">
+              <option value="Tesalia, Huila-Medio">
+              <option value="Tello, Huila-Norte">
+              <option value="Teruel, Huila-Medio">
+              <option value="Villavieja, Huila-Norte">
+              <option value="Yaguara, Huila-Medio">
+              <option value="Riohacha, La Guajira-Norte">
+              <option value="Albania, La Guajira-Norte">
+              <option value="Barrancas, La Guajira-Sur">
+              <option value="Dibulla, La Guajira-Norte">
+              <option value="Distraccion, La Guajira-Sur">
+              <option value="Fonseca, La Guajira-Sur">
+              <option value="Hatonuevo, La Guajira-Norte">
+              <option value="Maicao, La Guajira-Norte">
+              <option value="Manaure, La Guajira-Norte">
+              <option value="San juan del cesar, La Guajira-Sur">
+              <option value="Uribia, La Guajira-Norte">
+              <option value="Urumita, La Guajira-Sur">
+              <option value="Villanueva, La Guajira-Sur">
+              <option value="Santa marta, Magdalena-Norte">
+              <option value="Aracataca, Magdalena-Medio">
+              <option value="Ariguani, Magdalena-Sur">
+              <option value="Cienaga, Magdalena-Norte">
+              <option value="El banco, Magdalena-Sur">
+              <option value="El piñon, Magdalena-Medio">
+              <option value="El reten, Magdalena-Medio">
+              <option value="Fundacion, Magdalena-Medio">
+              <option value="Nueva granada, Magdalena-Sur">
+              <option value="Pivijay, Magdalena-Medio">
+              <option value="Plato, Magdalena-Sur">
+              <option value="Puebloviejo, Magdalena-Norte">
+              <option value="Remolino, Magdalena-Medio">
+              <option value="Sabanas de san angel, Magdalena-Medio">
+              <option value="Salamina, Magdalena-Medio">
+              <option value="San sebastian de buenavista, Magdalena-Sur">
+              <option value="San zenon, Magdalena-Sur">
+              <option value="Santa ana, Magdalena-Sur">
+              <option value="Santa barbara de pinto, Magdalena-Sur">
+              <option value="Sitionuevo, Magdalena-Norte">
+              <option value="Zona bananera, Magdalena-Norte">
+              <option value="Villavicencio, Meta-Norte">
+              <option value="Acacias, Meta-Sur">
+              <option value="Barranca de upia, Meta-Norte">
+              <option value="Cabuyaro, Meta-Norte">
+              <option value="Castilla la nueva, Meta-Sur">
+              <option value="Cubarral, Meta-Sur">
+              <option value="Cumaral, Meta-Norte">
+              <option value="El calvario, Meta-Norte">
+              <option value="El castillo, Meta-Sur">
+              <option value="El dorado, Meta-Sur">
+              <option value="Fuente de oro, Meta-Sur">
+              <option value="Granada, Meta-Sur">
+              <option value="Guamal, Meta-Sur">
+              <option value="Mapiripan, Meta-Norte">
+              <option value="Mesetas, Meta-Sur">
+              <option value="La macarena, Meta-Sur">
+              <option value="Uribe, Meta-Sur">
+              <option value="Lejanias, Meta-Sur">
+              <option value="Puerto concordia, Meta-Sur">
+              <option value="Puerto gaitan, Meta-Norte">
+              <option value="Puerto lopez, Meta-Norte">
+              <option value="Puerto lleras, Meta-Sur">
+              <option value="Puerto rico, Meta-Sur">
+              <option value="Restrepo, Meta-Norte">
+              <option value="San juan de arama, Meta-Sur">
+              <option value="San martin, Meta-Sur">
+              <option value="Vistahermosa, Meta-Sur">
+              <option value="Pasto, Narino">
+              <option value="Aldana, Narino">
+              <option value="Arboleda, Narino">
+              <option value="Barbacoas, Narino">
+              <option value="Buesaco, Narino">
+              <option value="Colon, Narino">
+              <option value="Consaca, Narino">
+              <option value="Cumbal, Narino">
+              <option value="Cumbitara, Narino">
+              <option value="Chachagsi, Narino">
+              <option value="El charco, Narino">
+              <option value="El peñol, Narino">
+              <option value="El rosario, Narino">
+              <option value="El tablon de gomez, Narino">
+              <option value="Gualmatan, Narino">
+              <option value="Imues, Narino">
+              <option value="La cruz, Narino">
+              <option value="La llanada, Narino">
+              <option value="La union, Narino">
+              <option value="Leiva, Narino">
+              <option value="Linares, Narino">
+              <option value="Magsi, Narino">
+              <option value="Mosquera, Narino">
+              <option value="Nariño, Narino">
+              <option value="Francisco pizarro, Narino">
+              <option value="Policarpa, Narino">
+              <option value="Puerres, Narino">
+              <option value="Roberto payan, Narino">
+              <option value="Samaniego, Narino">
+              <option value="Sandona, Narino">
+              <option value="San bernardo, Narino">
+              <option value="Santacruz, Narino">
+              <option value="Sapuyes, Narino">
+              <option value="Taminango, Narino">
+              <option value="Tangua, Narino">
+              <option value="San andres de tumaco, Narino">
+              <option value="Tuquerres, Narino">
+              <option value="Cucuta, Norte de Santander-Norte">
+              <option value="Abrego, Norte de Santander">
+              <option value="Arboledas, Norte de Santander">
+              <option value="Bochalema, Norte de Santander">
+              <option value="Cacota, Norte de Santander">
+              <option value="Cachira, Norte de Santander">
+              <option value="Chinacota, Norte de Santander">
+              <option value="Chitaga, Norte de Santander">
+              <option value="Convencion, Norte de Santander">
+              <option value="Cucutilla, Norte de Santander">
+              <option value="El tarra, Norte de Santander">
+              <option value="El zulia, Norte de Santander-Norte">
+              <option value="Gramalote, Norte de Santander">
+              <option value="Hacari, Norte de Santander">
+              <option value="Herran, Norte de Santander">
+              <option value="Labateca, Norte de Santander">
+              <option value="La esperanza, Norte de Santander">
+              <option value="La playa, Norte de Santander">
+              <option value="Lourdes, Norte de Santander">
+              <option value="Mutiscua, Norte de Santander">
+              <option value="Ocaña, Norte de Santander-Norte">
+              <option value="Pamplona, Norte de Santander">
+              <option value="Puerto santander, Norte de Santander-Norte">
+              <option value="Ragonvalia, Norte de Santander">
+              <option value="Salazar, Norte de Santander">
+              <option value="San calixto, Norte de Santander">
+              <option value="San cayetano, Norte de Santander-Norte">
+              <option value="Santiago, Norte de Santander">
+              <option value="Sardinata, Norte de Santander-Norte">
+              <option value="Silos, Norte de Santander">
+              <option value="Teorama, Norte de Santander">
+              <option value="Tibu, Norte de Santander-Norte">
+              <option value="Toledo, Norte de Santander">
+              <option value="Villa caro, Norte de Santander">
+              <option value="Villa del rosario, Norte de Santander-Norte">
+              <option value="Armenia, Quindio">
+              <option value="Pijao, Quindio">
+              <option value="Salento, Quindio">
+              <option value="Pereira, Risaralda">
+              <option value="Belen de umbria, Risaralda">
+              <option value="Guatica, Risaralda">
+              <option value="La virginia, Risaralda">
+              <option value="Marsella, Risaralda">
+              <option value="Mistrato, Risaralda">
+              <option value="Pueblo rico, Risaralda">
+              <option value="Quinchia, Risaralda">
+              <option value="Santa rosa de cabal, Risaralda">
+              <option value="Santuario, Risaralda">
+              <option value="Bucaramanga, Santander">
+              <option value="Albania, Santander">
+              <option value="Barichara, Santander">
+              <option value="Barrancabermeja, Santander-Norte">
+              <option value="Betulia, Santander">
+              <option value="Bolivar, Santander-Sur">
+              <option value="Cabrera, Santander">
+              <option value="Capitanejo, Santander">
+              <option value="Carcasi, Santander">
+              <option value="Cepita, Santander">
+              <option value="Cerrito, Santander">
+              <option value="Charala, Santander">
+              <option value="Chima, Santander">
+              <option value="Cimitarra, Santander-Sur">
+              <option value="Concepcion, Santander">
+              <option value="Confines, Santander">
+              <option value="Coromoro, Santander">
+              <option value="Curiti, Santander">
+              <option value="El carmen de chucuri, Santander">
+              <option value="El guacamayo, Santander">
+              <option value="El playon, Santander-Norte">
+              <option value="Encino, Santander">
+              <option value="Floridablanca, Santander">
+              <option value="Gambita, Santander">
+              <option value="Giron, Santander-Norte">
+              <option value="Guaca, Santander">
+              <option value="Guadalupe, Santander">
+              <option value="Guavata, Santander">
+              <option value="Jesus maria, Santander">
+              <option value="Landazuri, Santander-Sur">
+              <option value="Lebrija, Santander-Norte">
+              <option value="Los santos, Santander">
+              <option value="Macaravita, Santander">
+              <option value="Malaga, Santander">
+              <option value="Matanza, Santander">
+              <option value="Mogotes, Santander">
+              <option value="Molagavita, Santander">
+              <option value="Oiba, Santander">
+              <option value="Onzaga, Santander">
+              <option value="Palmar, Santander">
+              <option value="Piedecuesta, Santander">
+              <option value="Pinchote, Santander">
+              <option value="Puerto parra, Santander-Sur">
+              <option value="Puerto wilches, Santander-Norte">
+              <option value="Rionegro, Santander-Norte">
+              <option value="Sabana de torres, Santander-Norte">
+              <option value="San andres, Santander">
+              <option value="San gil, Santander">
+              <option value="San joaquin, Santander">
+              <option value="San vicente de chucuri, Santander">
+              <option value="Santa barbara, Santander">
+              <option value="Simacota, Santander">
+              <option value="Suaita, Santander">
+              <option value="Sucre, Santander-Sur">
+              <option value="Surata, Santander">
+              <option value="Tona, Santander">
+              <option value="Valle de san jose, Santander">
+              <option value="Velez, Santander">
+              <option value="Vetas, Santander">
+              <option value="Zapatoca, Santander">
+              <option value="Sincelejo, Sucre-Norte">
+              <option value="Buenavista, Sucre-Norte">
+              <option value="Caimito, Sucre-Sur">
+              <option value="Coloso, Sucre-Norte">
+              <option value="Corozal, Sucre-Norte">
+              <option value="Chalan, Sucre-Norte">
+              <option value="Galeras, Sucre-Norte">
+              <option value="Guaranda, Sucre-Sur">
+              <option value="Los palmitos, Sucre-Norte">
+              <option value="Majagual, Sucre-Sur">
+              <option value="Sampues, Sucre-Norte">
+              <option value="San benito abad, Sucre-Sur">
+              <option value="San juan de betulia, Sucre-Norte">
+              <option value="San marcos, Sucre-Sur">
+              <option value="San onofre, Sucre-Norte">
+              <option value="San pedro, Sucre-Norte">
+              <option value="Sucre, Sucre-Sur">
+              <option value="Santiago de tolu, Sucre-Norte">
+              <option value="Tolu viejo, Sucre-Norte">
+              <option value="Ibague, Tolima-Meseta">
+              <option value="Alpujarra, Tolima-Sur">
+              <option value="Alvarado, Tolima-Meseta">
+              <option value="Ambalema, Tolima-Norte">
+              <option value="Anzoategui, Tolima-Meseta">
+              <option value="Armero, Tolima-Norte">
+              <option value="Ataco, Tolima-Sur">
+              <option value="Cajamarca, Tolima-Meseta">
+              <option value="Carmen de apicala, Tolima-Sur">
+              <option value="Chaparral, Tolima-Sur">
+              <option value="Coyaima, Tolima-Sur">
+              <option value="Cunday, Tolima-Sur">
+              <option value="Dolores, Tolima-Sur">
+              <option value="Espinal, Tolima-Meseta">
+              <option value="Flandes, Tolima-Sur">
+              <option value="Fresno, Tolima-Norte">
+              <option value="Guamo, Tolima-Sur">
+              <option value="Honda, Tolima-Norte">
+              <option value="Lerida, Tolima-Norte">
+              <option value="Libano, Tolima-Norte">
+              <option value="Mariquita, Tolima-Norte">
+              <option value="Melgar, Tolima-Sur">
+              <option value="Murillo, Tolima-Norte">
+              <option value="Natagaima, Tolima-Sur">
+              <option value="Ortega, Tolima-Sur">
+              <option value="Piedras, Tolima-Meseta">
+              <option value="Planadas, Tolima-Sur">
+              <option value="Prado, Tolima-Sur">
+              <option value="Purificacion, Tolima-Sur">
+              <option value="Rioblanco, Tolima-Sur">
+              <option value="Roncesvalles, Tolima-Sur">
+              <option value="Rovira, Tolima-Meseta">
+              <option value="Saldaña, Tolima-Sur">
+              <option value="San antonio, Tolima-Sur">
+              <option value="San luis, Tolima-Meseta">
+              <option value="Santa isabel, Tolima-Norte">
+              <option value="Suarez, Tolima-Sur">
+              <option value="Valle de san juan, Tolima-Meseta">
+              <option value="Venadillo, Tolima-Norte">
+              <option value="Villahermosa, Tolima-Norte">
+              <option value="Villarrica, Tolima-Sur">
+              <option value="Cali, Valle del Cauca-Sur">
+              <option value="Alcala, Valle del Cauca">
+              <option value="Andalucia, Valle del Cauca">
+              <option value="Ansermanuevo, Valle del Cauca">
+              <option value="Argelia, Valle del Cauca">
+              <option value="Bolivar, Valle del Cauca">
+              <option value="Buenaventura, Valle del Cauca">
+              <option value="Bugalagrande, Valle del Cauca">
+              <option value="Caicedonia, Valle del Cauca">
+              <option value="Candelaria, Valle del Cauca-Sur">
+              <option value="Cartago, Valle del Cauca">
+              <option value="Dagua, Valle del Cauca-Sur">
+              <option value="El aguila, Valle del Cauca">
+              <option value="El cerrito, Valle del Cauca-Sur">
+              <option value="El dovio, Valle del Cauca">
+              <option value="Florida, Valle del Cauca-Sur">
+              <option value="Ginebra, Valle del Cauca">
+              <option value="La cumbre, Valle del Cauca-Sur">
+              <option value="La union, Valle del Cauca">
+              <option value="La victoria, Valle del Cauca">
+              <option value="Obando, Valle del Cauca">
+              <option value="Palmira, Valle del Cauca-Sur">
+              <option value="Pradera, Valle del Cauca-Sur">
+              <option value="Roldanillo, Valle del Cauca">
+              <option value="Sevilla, Valle del Cauca">
+              <option value="Toro, Valle del Cauca">
+              <option value="Tulua, Valle del Cauca">
+              <option value="Versalles, Valle del Cauca">
+              <option value="Vijes, Valle del Cauca">
+              <option value="Yotoco, Valle del Cauca">
+              <option value="Zarzal, Valle del Cauca">
+              <option value="Arauca, Arauca">
+              <option value="Arauquita, Arauca">
+              <option value="Cravo norte, Arauca">
+              <option value="Saravena, Arauca">
+              <option value="Tame, Arauca">
+              <option value="Yopal, Casanare">
+              <option value="Aguazul, Casanare">
+              <option value="Chameza, Casanare">
+              <option value="Hato corozal, Casanare">
+              <option value="Mani, Casanare">
+              <option value="Orocue, Casanare">
+              <option value="Pore, Casanare">
+              <option value="Sabanalarga, Casanare">
+              <option value="Sacama, Casanare">
+              <option value="San luis de palenque, Casanare">
+              <option value="Tamara, Casanare">
+              <option value="Tauramena, Casanare">
+              <option value="Villanueva, Casanare">
+              <option value="Mocoa, Putumayo">
+              <option value="Colon, Putumayo">
+              <option value="Orito, Putumayo">
+              <option value="Puerto asis, Putumayo">
+              <option value="Puerto caicedo, Putumayo">
+              <option value="Puerto guzman, Putumayo">
+              <option value="Leguizamo, Putumayo">
+              <option value="Sibundoy, Putumayo">
+              <option value="San francisco, Putumayo">
+              <option value="San miguel, Putumayo">
+              <option value="Santiago, Putumayo">
+              <option value="Valle del guamuez, Putumayo">
+              <option value="Villagarzon, Putumayo">
+              <option value="San andres, SAN ANDRES PROVIDENCIA ">
+              <option value="Leticia, Amazonas">
+              <option value="El encanto, Amazonas">
+              <option value="La chorrera, Amazonas">
+              <option value="La pedrera, Amazonas">
+              <option value="Miriti parana, Amazonas">
+              <option value="Puerto alegria, Amazonas">
+              <option value="Puerto arica, Amazonas">
+              <option value="Puerto nariño, Amazonas">
+              <option value="Puerto santander, Amazonas">
+              <option value="Inirida, Guainia">
+              <option value="Barranco minas, Guainia">
+              <option value="San jose del guaviare, Guaviare">
+              <option value="Mitu, Vaupes">
+              <option value="Puerto carreño, Vichada">
+              <option value="La primavera, Vichada">
+              <option value="Santa rosalia, Vichada">
+              <option value="Cumaribo, Vichada">
+          </datalist>
+        </div>
+        <input id="submit" type="button" class="search_icon" value="Buscar">
+        <div class="error">
+          <h3 id="error">*Municipio y Departamento son campos necesarios para continuar la búsqueda*</h3>
+        </div>
+				<div class="icons" id="icons">
+					<div class="icon1" onmouseenter="show('clima');show('clima1')" onmouseleave="hide('clima'); hide('clima1')">
+						<div id="clima1">
+							<h6 class="precip">Climatología</h6>
+							<div class="border_left border1"></div>
+						</div>
+						<img src="./images/precip.png">
+					</div>
+					<div id="icon2" class="icon2" onmouseenter="show('actividades');show('actividades1')" onmouseleave="hide('actividades');hide('actividades1')">
+						<div id="actividades1">
+							<h6 class="temp_min">Actividades</h6>
+							<div class="border_left border2"></div>
+						</div>
+						<img src="./images/temp_min.png">
+					</div>
+
+				</div>
+				<h2 class="button_next" id="button_next1">CALENDARIOS</h2>
+				<div class="button_next" id="button_next">
+					<input type="button" name="siguiente" value="Siguiente ▸" onclick="irAEtapa()" />
+				</div>
+			</div>
+		</article>
+	</section>
+	<footer class="footer">
+        <div class="menu_footer contenedor">
+            <ul>
+                <li>
+                    <a href="./index.html"><img src="./images/logo.jpg"></a>
+                </li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info_footer contenedor">
+            <h5>
+FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+            <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
+        </div>
+        <div class="logos">
+          <div class="contenedor">
+            <h3>CON EL APOYO DE:</h3>
+            <div class="fmi"></div>
+          </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js" type="text/javascript"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAITfEOAmH0M6fdbauBYoP8Mj6Oh4PPQKs&callback=initMap">
+    </script>
+    <script type="text/javascript">
+    	var lat= 4.167228;
+      var long = -74.899802;      
+      var map;
+      var municipio;
+      var ubicacion;
+      var departamento;
+      var clima;
+      var actividades;
+      var zona = "";
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat: lat, lng: long}
+        });
+        var geocoder = new google.maps.Geocoder();
+        document.getElementById('submit').addEventListener('click', function() {
+          geocodeAddress(geocoder, map);
+        });
+      }
+      function setLayer(departamento){
+          var layer = new google.maps.FusionTablesLayer({
+          map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col2",
+        from: "1P5mDY6KNIgNEC5dVagva1kFcIN1sqbKLieuWq14j",
+        where: "col1 \x3d \x27"+departamento.toLowerCase()+"\x27"
+      },
+      options: {
+        styleId: 2,
+        templateId: 3
+      }
+        });
+        layer.setMap(map);
+      }
+      function geocodeAddress(geocoder, resultsMap) {
+        ubicacion =document.getElementById('ubicacion').value;
+        var dpto = ubicacion.split(',')[1];
+        departamento = dpto.split('-')[0].trim();
+        municipio = ubicacion.split(',')[0];
+        municipio = replaceAll(municipio, ' ','_');
+        ubicacion = replaceAll(ubicacion,',','_');
+        ubicacion = replaceAll(ubicacion,' ','');
+        var ubicacion2 = departamento+"_"+municipio;
+        ubicacion2 = replaceAll(ubicacion2,',','_');
+        ubicacion2 = replaceAll(ubicacion2,' ','');
+
+        var departamento3 = replaceAll(departamento, ' ','_');
+        departamento3 = departamento3.toLowerCase();
+        departamento3 = replaceAll(departamento3,'ñ','n');
+        municipio = replaceAll(municipio,'ñ','n');
+        console.log(departamento3+"_"+municipio);
+        var zonaNum = dpto.split('-');
+        if(zonaNum.length>1){
+          zona = dpto.split('-')[1];
+        }
+        clima = document.getElementsByName('imagenes')[0];
+        actividades = document.getElementsByName('imagenes')[1];
+        console.log(departamento);
+        clima.style.backgroundImage= "url('./images/departamentos/climatologia/"+departamento3+"_"+municipio.toLowerCase()+"_climatologia"+".png')";
+        
+
+        //ACTIVIDADES BACKGROUND
+        if (departamento == "Tolima" || departamento =="Huila" || departamento == "Valle del Cauca" || departamento == "Cauca"){
+          
+            actividades.style.background= "url('./images/departamentos/actividades/Calendario_CENTRO_Riego_logo.jpg')";
+        }
+        else if(departamento == "Meta" || departamento =="Casanare" ||departamento=="Vichada"||departamento=="Arauca"){
+          console.log(departamento);
+          actividades.style.background= "url('./images/departamentos/actividades/Calendario_LLANOS_Riego_logo.jpg')";
+        }
+        else if(departamento=="Cordoba"||departamento=="Sucre"||departamento=="Bolivar"||departamento=="Antioquia"){
+          console.log(departamento);
+          actividades.style.background= "url('./images/departamentos/actividades/Calendario_CARIBE_HUMEDO_Riego-Secano_logo.jpg')";
+        }
+        else if(departamento=="Cesar"||departamento=="La Guajira"||departamento=="Magdalena"){
+          console.log(departamento);  
+          actividades.style.background= "url('./images/departamentos/actividades/Calendario_CARIBE_SECO_Cesar_Riego_logo.jpg')";
+        }
+        else if(departamento=="Norte de Santander"||departamento=="Santander"){
+          console.log(departamento);
+          actividades.style.background= "url('./images/departamentos/actividades/Calendario_CARIBE_SECO_Riego_logo.jpg')";
+        }
+        else{
+          console.log(departamento);
+          var iconAct = document.getElementById('icon2').style.visibility = "hidden";
+        }
+
+        hide('error');
+        show('icons');
+        show('button_next');
+        show('button_next1');
+        var address = ubicacion;
+        geocoder.geocode({'address': address}, function(results, status) {
+            if (status === 'OK') {
+              setLayer(departamento);
+              resultsMap.setCenter(results[0].geometry.location);
+              var marker = new google.maps.Marker({
+                map: resultsMap,
+                position: results[0].geometry.location
+              });
+            } else {
+              alert('Geocode was not successful for the following reason: ' + status);
+            }
+          });
+      }
+      function show(elemento){
+      	var elem = document.getElementById(elemento);
+      	elem.style.visibility = 'visible';
+        elem.style.zIndex = '2';
+      }
+      function hide(elemento){
+      	var elem = document.getElementById(elemento);
+      	elem.style.visibility = 'hidden';
+        elem.style.zIndex = '0';
+      }
+
+      function irAEtapa(){
+        var municipio2 = replaceAll(municipio, '_',' ');
+        window.location="etapa.html?mun="+municipio2+"&depar="+departamento+"&zona="+zona;
+      }
+      function replaceAll(text, c1, c2){
+        while(text.indexOf(c1)>0){
+          text = text.replace(c1,c2);
+        }
+        return text;
+      }
+    </script>
+</body>
+</html>

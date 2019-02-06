@@ -1,0 +1,6 @@
+#Precip,Precipitacion
+Los meses mas lluviosos son abril y mayo	
+Los meses menos lluviosos son enero y febrero	
+La inicia en abril y finaliza en noviembre.
+#Lluvia,N. días de lluvia
+El mes con mayor numero de dias con lluvia es mayo con un rango entre 18-27 dias.

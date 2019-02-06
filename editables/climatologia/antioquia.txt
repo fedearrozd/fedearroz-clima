@@ -1,0 +1,18 @@
+#Precip,Precipitacion
+Los meses mas lluviosos son abril, mayo, septiembre y octubre	
+Los meses menos lluviosos son diciembre y enero	
+Tiene dos temporadas lluviosas, la primera inicia en marzo y finaliza en junio y la segunda inicia en agosto y finaliza en noviembre
+#Temp_max,Temperatura. Máx.
+Las mayores temperaturas maximas promedio se registran hacia los meses de febrero y marzo.	
+Las menores temperaturas maximas promedio se registran hacia los meses de octubre y noviembre.
+#Temp_min,Temperatura. Mín.
+Las mayores temperaturas minimas promedio se registran hacia los meses de abril y mayo.	
+Las menores temperaturas minimas promedio se registran hacia los meses de julio y agosto.
+#Luz,Brillo Solar
+La mayor radiacion solar se registran hacia los meses de enero y julio.	
+La menor radiacion solar se registran hacia los meses de abril y mayo.
+#Lluvia,N. días de lluvia
+El mes con mayor numero de dias con lluvia es octubre con un rango entre 14-21 dias.
+#Humedad,Humedad Relativa
+La humedad relativa promedio mas alta se registran hacia los meses de octubre y noviembre.	
+La humedad relativa promedio mas baja se registran hacia los meses de febrero y marzo.

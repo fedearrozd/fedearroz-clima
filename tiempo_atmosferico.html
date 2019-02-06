@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style-tiempo.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+	<title>Tiempo atmosférico</title>
+</head>
+<body>
+	<a href="ayuda.pdf" target="_blank" class="help_button"></a>
+	<section class="logo">
+		<header class="contenedor header">
+			<figure>
+				<a href="./index.html"><img src="./images/logo.jpg"></a>
+			</figure>
+		</header>
+	</section>
+	<section class="portada">
+		<div class="contenedor"></div>		
+	</section>
+	<section class="contenedor section1">
+		<article class="section1_article1">
+			<img class="img_title" src="./images/icon_satelital.png">
+			<h1>TIEMPO ATMOSFÉRICO (INFORMACIÓN SATELITAL)</h1>	
+		</article>
+		<article>
+			<div class="brown_bar"></div>
+		</article>
+	</section>
+	<section class="contenedor section2">
+		<div id="map">
+			<img src="./satelite/loop_GOES.gif" class="mapa_png">
+		</div>
+		<img src="./images/convenciones.png" class="convenciones">
+	</section>
+	<section class="section3 contenedor">
+		<article>
+			<div>
+				<h6><span>La hora de la imagen</span> corresponde a la hora internacional UTC. Es decir, al momento de usar la herramienta en Colombia, <span>se debe restar 5 horas</span> al tiempo arrojado en el mapa.</h6>
+				<img src="./images/reloj_tiempo.png">
+				<div>
+					<h6 class="text_dif_tiempo">19:45 Hora internacional</h6>
+					<img class="dif_tiempo" src="./images/dif_tiempo.png">
+					<h6 class="text_dif_tiempo">14:45 Hora Colombia</h6>
+				</div>
+			</div>
+			<div class="importante">
+				<h4>Importante</h4>
+				<img src="./images/admiration_icon_white.png">
+			</div>
+			<div class="sensor_div">
+				<h6>El sensor de radiación infrarroja de los satelites
+		metereológicos, <span>mide la temperatura del tope de las nubes y de la superficie terrestre. </span> Dado que en la capa atmosférica en donde se establecen las nubes, la
+		temperatura del aire disminuye a medida que la altura,
+		las cuales tienen mayor probabilidad de producir
+		lluvia.</h6>
+			</div>
+			<h4 class="sensor">Sensor de radiación</h4>
+		</article>
+	</section>
+	<section class="section4 contenedor">
+		<h6>Estas imagenes son cortesía de <span>Earth Science Branch at the NASA</span> George C. Marshall Space Flight in Huntsville, Alabama.<br/>Mayor información: <span>https://weather.msfc.nasa.gov/</span></h6>
+	</section>
+		<footer class="footer">
+        <div class="menu_footer contenedor">
+            <ul>
+                <li>
+                    <a href="./index.html"><img src="./images/logo.jpg"></a>
+                </li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info_footer contenedor">
+            <h5>
+FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+            <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
+        </div>
+        <div class="logos">
+          <div class="contenedor">
+            <h3>CON EL APOYO DE:</h3>
+            <div class="fmi"></div>
+          </div>
+        </div>
+    </footer>
+	<script type="text/javascript">
+		function show(elemento){
+      	console.log(elemento);
+      	var elem = document.getElementById(elemento);
+      	console.log(elem);
+      	elem.style.fontSize = '30px';
+      	elem.style.top = '12%';
+      }
+      function hide(elemento){
+      	var elem = document.getElementById(elemento);
+      	elem.style.fontSize = '22px';
+      	elem.style.top = '40%';
+      }
+
+      function myFunction(x) {
+      	var map = document.getElementById('map');
+      	console.log(map);
+	    if (x.matches) { // If media query matches
+	    	map.innerHTML = '<iframe src="https://weather.msfc.nasa.gov/cgi-bin/get-abi?satellite=GOESEastfullDiskband13&amp;lat=-5&amp;lon=-60&amp;zoom=2&amp;type=Animation&amp;numframes=20&amp;width=1000&amp;height=1000&amp;palette=ir2.pal" width="100%" height="523px" class="map" ></iframe>';
+	    } else {
+			 map.innerHTML = '<iframe src="https://weather.msfc.nasa.gov/cgi-bin/get-abi?satellite=GOESEastfullDiskband13&amp;lat=-5&amp;lon=-65&amp;zoom=2&amp;type=Animation&amp;numframes=20&amp;width=1000&amp;height=1000&amp;palette=ir2.pal" width="100%" height="523px" class="map" ></iframe>'
+	    }
+	}
+
+	var x = window.matchMedia("(max-width: 500px)")
+	//myFunction(x) // Call listener function at run time
+	//x.addListener(myFunction) // Attach listener function on state changes
+	</script>
+</body>
+</html>

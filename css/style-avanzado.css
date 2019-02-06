@@ -1,0 +1,112 @@
+/*HEADER*/
+.portada{
+	background-image: url('../images/header_index.jpg');
+	background-size: cover;
+	height: 500px;
+	font-family: 'Fira Sans', sans-serif;
+}
+.title{
+	padding-top: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+.header{
+	margin: 0;
+}
+.header figure{
+	margin: 0;
+}
+.logo{
+	height: 40px;
+}
+.subtitle{
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+/*contenido*/
+.section1{
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 50px !important;
+}
+.vertical_line
+{
+	border-style: Solid;
+    border-color: #7F6212;
+    border-color: rgba(127, 98, 18, 1);
+    border-width: 5px;
+    height: 300px;
+}
+.description
+{
+	font-family: Open Sans Condensed;
+    font-weight: bold;
+    font-size: 25px;
+    width: 60%;
+    line-height: 40px;
+    color: #204203;
+    color: rgb(32, 66, 3);
+    text-align: justify;
+}
+.section1 .title
+{
+	font-family: 'Open Sans Condensed';
+    font-weight: bold;
+    font-size: 68px;
+    width: 30%;
+    line-height: 105px;
+    color: #7F6212;
+    color: rgb(127, 98, 18);
+    margin: 0;
+    padding: 0;
+}
+/*SECTION2*/
+.section2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.section2 article img{
+	width: 200px;
+}
+.section2 article div{
+	width: 600px;
+    text-align: center;
+}
+.section2 .article_left div .top{
+	font-family: 'Open Sans Condensed';
+    color: rgb(235,174,40);
+    border-bottom: 3px solid rgb(235,174,40);
+    font-size: 30px;
+    margin: 0;
+}
+.section2 .article_left div .bottom{
+    font-family: 'Open Sans Condensed';
+    color: rgb(235,174,40);
+    border-top: 3px solid rgb(235,174,40);
+    font-size: 30px;
+    margin: 0;
+}
+.section2 .article_right div .top{
+	font-family: 'Open Sans Condensed';
+    color: rgb(104,113,47);
+    border-bottom: 3px solid rgb(104,113,47);
+    font-size: 30px;
+    margin: 0;
+}
+.section2 .article_right div .bottom{
+    font-family: 'Open Sans Condensed';
+    color: rgb(104,113,47);
+    border-top: 3px solid rgb(104,113,47);
+    font-size: 30px;
+    margin: 0;
+}

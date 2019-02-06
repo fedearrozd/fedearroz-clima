@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style-despues.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+	<title>Pronóstico de la semana</title>
+</head>
+<body>
+  <a href="ayuda.pdf" target="_blank" class="help_button"></a>
+	<section class="logo">
+		<header class="contenedor header">
+			<figure>
+				<a href="./index.html"><img src="./images/logo.jpg"></a>
+			</figure>
+		</header>
+	</section>
+	<section class="portada">
+		<div class="contenedor"></div>		
+	</section>
+	<section class="contenedor section1">
+		<article class="section1_article1">
+			<img class="img_title" src="./images/icon_despues.png">
+			<h1>PRONÓSTICO DEL TIEMPO</h1>	
+		</article>
+		<article class="section1_article2">
+			<h3>Con la ayuda del pronóstico del tiempo usted puede programar para los siguientes días, las labores que requieren de condiciones meteorológicas específicas, bien sea para poder ejecutarlas o para garantizar el éxito de los resultados. Ejemplo de esto son Controles de malezas, Fertilizaciones, Controles Fitosanitarios, manejo del agua de riego, etc. Esta información le ayudará evitar la pérdida de eficiencia de las aplicaciones por lluvias, reducir los sobrecostos y optimizar sus recursos.
+</h3>
+		</article>
+	</section>
+	<section class="contenedor section2">
+		<article>
+			<img class="icon_tiempo" src="./images/icon_tiempo.png">
+		</article>
+		<article class="list">
+			<h3 class="text_tiempo">Pronóstico del tiempo para los próximos días:</h3>
+		</article>
+		<article class="button_reg_loc">
+			<a href="http://www.pronosticosyalertas.gov.co/web/pronosticos-y-
+alertas/pronosticos">REGIONAL<br/><p>[ IDEAM ]</p></a>
+			<a onclick="irLocal()">LOCAL<br/><p>[ Fuente Externa ]</p></a>
+		</article>
+		<article>
+			<div class="button_next">
+					<a href="./etapa.html"><input type="button" name="regresar" value="◂ regresar"/></a>
+			</div>
+		</article>
+	</section>
+		<footer class="footer">
+        <div class="menu_footer contenedor">
+            <ul>
+                <li>
+                    <a href="./index.html"><img src="./images/logo.jpg"></a>
+                </li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
+                    <li>Habla con nosotros</li>
+                </a>
+                <a href="http://190.60.252.91:2911/loginUsers">
+                    <li>Sección usuarios</li>
+                </a>
+                <a href="documentos.html">
+                    <li>Documentos</li>
+                </a>
+            </ul>
+        </div>
+        <div class="info_footer contenedor">
+            <h5>
+FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+            <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
+        </div>
+        <div class="logos">
+          <div class="contenedor">
+            <h3>CON EL APOYO DE:</h3>
+            <div class="fmi"></div>
+          </div>
+        </div>
+    </footer>
+<script type="text/javascript">
+	var lat= 4.167228;
+    var long = -74.899802; 
+	function irLocal(){
+		if (navigator.geolocation)
+     	 {
+          navigator.geolocation.getCurrentPosition(function(pos) {
+            lat = pos.coords.latitude;
+            long = pos.coords.longitude;
+        	window.location="https://www.windy.com/?rain,"+lat+","+long+",8";
+          }); 
+      }
+      else
+      {
+          alert("No hay soporte para la geolocalización: podemos desistir o utilizar algún método alternativo");
+      }
+    }
+</script>
+</body>
+</html>

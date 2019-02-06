@@ -1,0 +1,6 @@
+#Precip,Precipitacion
+Los meses mas lluviosos son abril, octubre y noviembre	
+Los meses menos lluviosos son junio y julio	
+Tiene dos temporadas lluviosas, la primera inicia en marzo y finaliza en mayo y la segunda inicia en septiembre y finaliza en diciembre.
+#Lluvia,N. días de lluvia
+El mes con mayor numero de dias con lluvia es octubre con un rango entre 14-25 dias.

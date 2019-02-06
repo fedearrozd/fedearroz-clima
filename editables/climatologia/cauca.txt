@@ -1,0 +1,18 @@
+#Precip,Precipitacion
+Los meses mas lluviosos son octubre, noviembre y diciembre	
+Los meses menos lluviosos son julio y agosto	
+Esta zona presenta diferentes regimenes de lluvias, debido a las variaciones de topografia.
+#Temp_max,Temperatura. Máx.
+Las mayores temperaturas maximas promedio se registran hacia los meses de agosto y septiembre.
+Las menores temperaturas maximas promedio se registran hacia los meses de noviembre y diciembre.
+#Temp_min,Temperatura. Mín.
+Las mayores temperaturas minimas promedio se registran hacia los meses de abril y mayo.	
+Las menores temperaturas minimas promedio se registran hacia los meses de julio y agosto.
+#Luz,Brillo Solar
+La mayor radiacion solar se registran hacia los meses de marzo y abril.	
+La menor radiacion solar se registran hacia los meses de noviembre y diciembre.
+#Lluvia,N. días de lluvia
+El mes con mayor numero de dias con lluvia es noviembre con un rango entre 12-25 dias.
+#Humedad,Humedad Relativa
+La humedad relativa promedio mas alta se registran hacia los meses de noviembre y diciembre.	
+La humedad relativa promedio mas baja se registran hacia los meses de agosto y septiembre.

@@ -1,0 +1,332 @@
+/*HEADER*/
+.portada{
+	background-image: url('../images/antes.jpg');
+	background-size: cover;
+	height: 500px;
+	font-family: 'Fira Sans', sans-serif;
+	background-position: center;
+}.header{
+	margin: 0;
+}
+.header figure{
+	margin: 0;
+}
+.logo{
+	height: 40px;
+}
+/*SECTION1*/
+.img_title{
+	width: 200px;
+	height: 200px;
+    margin-left: 70px;
+}
+.section1_article1{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	margin: 50px 0;
+}
+.section1_article1 h1{
+	font-family: 'Open Sans Condensed';
+	font-size: 45px;
+	color: rgb(123,82,62);
+	width: 600px;
+	text-align: center;
+}
+.section1_article2 h3{
+	font-family: 'Open Sans Condensed';
+	font-size: 25px;
+	color: rgb(32,66,3);
+	text-align: justify;
+	width: 950px;
+	margin: 10px auto;
+}
+/*SECTION2*/
+.brown_bar{
+	width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    background: rgb(123,99,36);
+}
+.section2_article1 div h1{
+	color: rgb(123,99,36);
+    font-size: 35px;
+    font-family: 'Oswald';
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+}
+.section2_article1 div{
+	text-align: center;
+}
+.section2_article1 div img{
+	height: 45px;
+	margin-left: 10px;
+}
+.section2_article2, .section2_article3{
+	display: flex;
+    justify-content: center;
+}
+.section2_article2 div, .section2_article3 div{
+	border: 1px solid rgb(103,113,49);
+}
+.section2_article2 div h1, .section2_article3 div h1{
+     color: white;
+    background: rgba(103, 113, 49, 1);
+    line-height: 2.5;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: normal;
+    margin: 0;
+}
+.section2_article2 div h1 img, .section2_article3 div h1 img{
+	height: 35px;
+    margin-right: 15px;
+}
+.section2_article2 div h3, .section2_article3 div h3{
+	font-family: 'Oswald';
+    font-weight: normal;
+    text-align: center;
+    width: 300px;
+    margin: 30px 20px;
+}
+.section2_article2 div h3 p, .section2_article3 div h3 p{
+	background: rgb(123,99,36);
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*iconos*/
+.section3 article{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 360px;
+	margin: 50px auto;
+}
+.icons{
+	margin-top: 40px;
+    width: 50px;
+    height: 310px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.icons h6{
+    position: absolute;
+    border-bottom: 3px solid rgb(119, 98, 46);
+    top: 40%;
+    font-size: 22px;
+    font-family: Oswald;
+    margin: 0;
+    text-align: center;
+    color: rgb(119, 98, 46);
+    width: 200px;
+    left: 80px;
+    font-weight: normal;
+    transition: .5s;
+}
+.border_left, .border_rigth{
+    border-right: 3px solid rgb(119, 98, 46);
+    border-top: 3px solid rgb(119, 98, 46);
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 100%;
+    width: 30px;
+}
+
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
+	background-color: rgba(103, 113, 49, 1);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover, .icon6:hover{
+	background-color: rgba(84,107,33,0.8);
+}
+.icon1 img{
+	width: 80%;
+    left: 10%;
+    position: relative;
+    top: 10%;
+}
+.icon1 img{
+	width: 80%;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+}
+.icon2 img, .icon3 img{
+	    height: 80%;
+    left: 20%;
+    position: absolute;
+    top: 10%
+}
+.icon4 img, .icon5 img{    
+	width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 15%;
+}
+.icon6 img{
+	height: 80%;
+    left: 25%;
+    position: absolute;
+    top: 10%;
+}
+.variable_graph{
+	background-image: url(../images/GRAFICOS/Precipitacion/Graficos_Precipitacion/Precipitación_Vichada.jpg);
+	background-size: cover;
+	width: 70%;
+	height: 95%;
+    transition: 0.1s;
+}
+/*SECTION4*/
+.section4 article:last-child{
+	height: 500px;
+    position: relative;
+}
+#map{
+	background-image: url(../images/GRAFICOS/Precipitacion/Mapas_Precipitación/Map_Prec_Vichada.jpg);
+	background-size: cover;
+	width: 85%;
+	height: 95%;
+    transition: 0.1s;
+}
+#title_depto{
+    background: rgb(103,113,49);
+    position: absolute;
+    font-family: 'Open Sans Condensed';
+    color: white;
+    font-size: 25px;
+    padding: 5px 10px;
+    right: 200px;
+}
+@media screen and (max-width: 500px){
+    .portada{
+            background-position-x: -290px;
+    }
+    .section1_article1{
+            margin: 25px 10px;
+    }
+    .img_title{
+            width: 110px;
+    height: 110px;
+    margin: 0;
+    }
+    .section1_article1 h1{
+        font-size: 24px;
+    margin: 0;
+    }
+    .section1_article2 h3{
+        width: auto;
+    margin: 10px;
+    font-size: 15px;
+    }
+    .section2_article1 div h1{
+          font-size: 25px;
+    margin: 10px;
+    line-height: 1.3;
+    }
+    .section2_article1 div img{
+        height: 30px;
+    }
+    .section2_article2 div h1, .section2_article3 div h1{
+        font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+    .section2_article2 div h1 img, .section2_article3 div h1 img{
+        height: 23px;
+    margin: 5px
+    }
+    .section2_article2, .section2_article3 {
+        flex-wrap: wrap;
+    }
+    .brown_bar{
+            height: 10px;
+        margin-top: 30px;
+    }
+    .section2_article2 div h3, .section2_article3 div h3{
+        margin: 4px 10px;
+    text-align: left;
+    width: auto;
+    font-size: 14px;
+    }
+    .section2_article2 div, .section2_article3 div{
+            width: 90%;
+    margin: 0 5%;
+    }
+    .section2_article2 div h3 p, .section2_article3 div h3 p{
+            width: 10px;
+    height: 10px;
+    }
+    .border_left, .border_rigth{
+        width: 0;
+    height: 0;
+    visibility: hidden;
+    }
+    .icons h6{
+               font-size: 14px;
+    width: 100px;
+    position: relative;
+    left: 0px;
+    top: 70px;
+        display: inline;
+    }
+    .icons{
+width: 90%;
+    height: 210px;
+    margin: 0 5%;
+      align-items: center;
+    justify-content: space-between;
+    }
+    .icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
+            width: 70px;
+    height: 70px;
+    margin: 13px;
+    }
+    .icon1 img{
+            width: 77%;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+    }
+    .section3 article{
+            flex-wrap: wrap;
+                margin-top: 30px;
+    }
+    .variable_graph{
+            width: 95%;
+    margin: 45px auto;
+    height: 40%;
+
+    }
+    #map{
+            width: 108%;
+    height: 225px;
+    margin: 0px;
+    left: -22px;
+    position: relative;
+    }
+    #title_depto{
+            position: absolute;
+    width: 80%;
+    right: auto;
+    left: 10%;
+    text-align: center;
+    top: 230px;
+    padding: 5px 0;
+    }
+    .section4 article:last-child{
+        height: 310px;
+    }
+}

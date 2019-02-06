@@ -1,0 +1,260 @@
+/*HEADER*/
+.portada{
+	background-image: url('../images/despues.jpg');
+	background-size: cover;
+	height: 500px;
+	font-family: 'Fira Sans', sans-serif;
+	background-position: center;
+}.header{
+	margin: 0;
+}
+.header figure{
+	margin: 0;
+}
+.logo{
+	height: 40px;
+}
+/*SECTION1*/
+.img_title{
+	width: 200px;
+	height: 200px;
+    margin-left: 70px;
+}
+.section1_article1{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	margin: 50px 0;
+}
+.section1_article1 h1{
+	font-family: 'Open Sans Condensed';
+	font-size: 45px;
+	color: rgb(123,82,62);
+	width: 450px;
+	text-align: center;
+	line-height: 1.2;
+}
+.section1_article1 h1{
+	width: auto;
+	margin: 15px;
+	color: rgb(178,204,69);
+}
+.section1_article2 h3{
+	font-family: 'Open Sans Condensed';
+	font-size: 25px;
+	color: rgb(32,66,3);
+	text-align: justify;
+	width: 950px;
+	margin: 10px auto;
+	line-height: 1.2;
+}
+/*SECTION2*/
+.section2 article:first-child{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+.vegetativa_herramienta{
+	justify-content: center !important;
+}
+.vegetativa_herramienta img, .vegetativa_herramienta h3{
+	cursor: pointer;
+}
+.section2 article:first-child h3{
+	color: rgb(244, 178, 62);
+    font-family: 'Open Sans Condensed';
+    font-size: 35px;
+    text-align: center;
+    width: 45%;
+    margin-right: 100px;
+}
+.icon_pronostico{
+	border-radius: 50%;
+	margin-left: 100px;
+	width: 200px;
+	height: 200px;
+}
+.icon_tiempo{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+.list{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.list h3{
+	font-family: 'Open Sans Condensed';
+    color: rgb(40, 65, 16);
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+}
+.text_tiempo{
+	width: 50% !important;
+    color: rgb(101,114,36) !important;
+}
+.button_reg_loc{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button_reg_loc a{
+	cursor: pointer;
+    font-family: 'Open Sans Condensed';
+    background: rgb(244,178,62);
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 20px;
+}
+.button_reg_loc a p{
+	font-size: 15px;
+    margin: 0 0 5px 0;
+}
+.list select{
+	font-size: 25px;
+    height: 60px;
+    margin-left: 60px;
+}
+.section2 input[type="button"]{
+	display: block;
+	font-size: 15px;
+	color: white;
+	background: rgb(123,98,36);
+	margin: 40px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+	line-height: 2;
+}
+.section2 a{
+	text-decoration:none;
+}
+.button_next{
+	display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.boletin{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.boletin h5{
+	color: rgb(84,107,33);
+    font-family: 'Open Sans Condensed';
+    font-size: 20px;
+    border-bottom: 2px solid;
+    width: 21%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.boletin div{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boletin div h6{
+	font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    color: white;
+    background: rgb(84,107,33);
+    margin: 10px 0;
+    padding: 5px 0;
+    width: 130px;
+    text-align: center;
+    height: 20px;
+    display: inline-block;
+    margin-right: 0;
+}
+.boletin div img{
+	background: rgb(84,107,33);
+    height: 30px;
+    display: inline-block;
+    padding: 0 10px;
+}
+.title_tiempo{
+	    margin-top: 75px !important;
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 500px){
+	 .portada{
+            background-position-x: -290px;
+    }
+    .section1_article1{
+            margin: 25px 10px;
+    }
+    .img_title{
+            width: 110px;
+    height: 110px;
+    margin: 0;
+    }
+    .section1_article1 h1{
+        font-size: 24px;
+    margin: 0 !important;
+    }
+    .section1_article2 h3{
+        width: auto;
+    margin: 10px;
+    font-size: 15px;
+    }
+    .section2 article:first-child{
+    	margin-top: 20px;
+    }
+    .icon_pronostico{
+    	width: 110px;
+	    margin-left: 20px;
+	    height: 110px;
+    }
+    .section2 article:first-child h3{
+    	    font-size: 20px;
+    margin: 0 20px;
+    }
+    .list{
+    	 flex-wrap: wrap;
+    margin-top: 20px;
+	}
+	.list h3{
+		    width: 90%;
+    font-size: 15px;
+    margin: 0;
+	}
+	.list select{
+		    width: 90%;
+    height: auto;
+    margin: 0 5%;
+    font-size: 15px;
+    border: 2px solid #FFB000;
+	}
+	.button_next{
+		    margin: 0 10px;
+	}
+	.boletin h5{
+		width: auto;
+	}
+	.icon_tiempo{
+		width: 110px;
+    height: 110px;
+	}
+	.button_reg_loc{
+		    margin-top: 20px;
+	}
+	.section2 a{
+		    font-size: 20px;
+    padding: 0;
+	}
+	.title_evaluacion{
+		font-size: 16px !important;
+	}
+	
+}
