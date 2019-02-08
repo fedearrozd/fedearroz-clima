@@ -41,11 +41,11 @@ Pronóstico del tiempo para los próximos días:</h3>
 		</article>
 		<article class="button_reg_loc">
 			<a href="http://www.pronosticosyalertas.gov.co/web/pronosticos-y-
-alertas/pronosticos">REGIONAL<br/><p>[ IDEAM ]</p></a>
+alertas/pronosticos" target="_blank" onclick="alert('Se está dirigiendo a una página externa')">REGIONAL<br/><p>[ IDEAM ]</p></a>
 			<a onclick="irLocal()">LOCAL<br/><p>[ Fuente externa ]</p></a>
 		</article> 
 	</section>
-  <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a> 
+  <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ Regresar"/></a> 
 		<footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
@@ -83,14 +83,16 @@ var urlComplement = window.location.search
 		if (navigator.geolocation)
      	 {
           navigator.geolocation.getCurrentPosition(function(pos) {
+            alert("Se está dirigiendo a una página externa");
             lat = pos.coords.latitude;
             long = pos.coords.longitude;
-        	window.location="https://www.windy.com/?rain,"+lat+","+long+",8";
+        	window.open("https://www.windy.com/?rain,"+lat+","+long+",8");
           }); 
       }
       else
       {
-          alert("No hay soporte para la geolocalización: podemos desistir o utilizar algún método alternativo");
+          alert("Se está dirigiendo a una página externa");
+          window.open("https://www.windy.com/?rain,"+lat+","+long+",8");
       }
     }
     function comeBack(){

@@ -77,11 +77,11 @@
 		</article>
 		<article>
 			<div class="button_next">
-					<input type="button" name="siguiente" value="siguiente ▸" onclick="ir()" />
+					<input type="button" name="siguiente" value="Siguiente ▸" onclick="ir()" />
 				</div>
 		</article>
 	</section>
-	<a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a>  
+	<a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ Regresar"/></a>  
 		<footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
@@ -114,13 +114,13 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
 <script type="text/javascript">
 	var urlComplement = window.location.search
 	function ir(){
+		alert("Se está dirigiendo a una página externa");
 		var sel = document.getElementById('address').value;
 		var a = sel.split(",");
 		for(i = 0; i< a.length ; i++){
 			a[i] = a[i].trim();
 		}
-		console.log(a);
-        window.location="https://pronosticos.aclimatecolombia.org/Clima/"+a[0]+"/"+a[1]+"/"+a[2];
+        window.open("https://pronosticos.aclimatecolombia.org/Clima/"+a[0]+"/"+a[1]+"/"+a[2]);
       }
       function replaceAll(str, term, replacement) {
       		var i = str.indexOf(term);

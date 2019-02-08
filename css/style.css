@@ -90,7 +90,7 @@ body{
 }
 .button_come_back{
 	display: block;
-	font-size: 15px;
+	font-size: 20px;
 	color: white;
 	background: rgb(123,98,36);
 	margin: 40px 0;
@@ -98,7 +98,7 @@ body{
     cursor: pointer;
 	line-height: 2;
 	position: fixed;
-	top: 20%;
+	top: 15%;
 	left: 5%;
 }
 .fmi{

@@ -38,11 +38,11 @@ Aquí usted tiene acceso a los registros de la red de estaciones meteorológicas
 		</article>
 		<article>
 			<div class="button_next">
-					<input type="button" name="siguiente" value="siguiente ▸" onclick="ir()" />
+					<input type="button" name="siguiente" value="Siguiente ▸" onclick="ir()" />
 				</div>
 		</article>
 	</section>
-	  <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a> 
+	  <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ Regresar"/></a> 
 		<footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
@@ -75,6 +75,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
 <script type="text/javascript">
 	var urlComplement = window.location.search
 	function ir(){
+		alert("Se está dirigiendo a una página externa");
         window.open("http://190.60.252.91:2911/climatefed#");
       }
           function comeBack(){
