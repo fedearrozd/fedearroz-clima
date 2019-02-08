@@ -57,6 +57,9 @@ labores de cultivo.</h2>
         <div class="inputs">
           <input list="estaciones" id="ubicacion" type="text" placeholder="Espinal, Tolima">
             <datalist id="estaciones">
+              <select onchange="$('#country').val(this.value)">
+
+
               <option value="Medellin, Antioquia">
               <option value="Abejorral, Antioquia">
               <option value="Abriaqui, Antioquia">
@@ -746,20 +749,20 @@ labores de cultivo.</h2>
               <option value="Sucre, Sucre-Sur">
               <option value="Santiago de tolu, Sucre-Norte">
               <option value="Tolu viejo, Sucre-Norte">
-              <option value="Ibague, Tolima-Meseta">
+              <option value="Ibague, Tolima-Centro">
               <option value="Alpujarra, Tolima-Sur">
-              <option value="Alvarado, Tolima-Meseta">
+              <option value="Alvarado, Tolima-Centro">
               <option value="Ambalema, Tolima-Norte">
-              <option value="Anzoategui, Tolima-Meseta">
+              <option value="Anzoategui, Tolima-Centro">
               <option value="Armero, Tolima-Norte">
               <option value="Ataco, Tolima-Sur">
-              <option value="Cajamarca, Tolima-Meseta">
+              <option value="Cajamarca, Tolima-Centro">
               <option value="Carmen de apicala, Tolima-Sur">
               <option value="Chaparral, Tolima-Sur">
               <option value="Coyaima, Tolima-Sur">
               <option value="Cunday, Tolima-Sur">
               <option value="Dolores, Tolima-Sur">
-              <option value="Espinal, Tolima-Meseta">
+              <option value="Espinal, Tolima-Centro">
               <option value="Flandes, Tolima-Sur">
               <option value="Fresno, Tolima-Norte">
               <option value="Guamo, Tolima-Sur">
@@ -771,19 +774,19 @@ labores de cultivo.</h2>
               <option value="Murillo, Tolima-Norte">
               <option value="Natagaima, Tolima-Sur">
               <option value="Ortega, Tolima-Sur">
-              <option value="Piedras, Tolima-Meseta">
+              <option value="Piedras, Tolima-Centro">
               <option value="Planadas, Tolima-Sur">
               <option value="Prado, Tolima-Sur">
               <option value="Purificacion, Tolima-Sur">
               <option value="Rioblanco, Tolima-Sur">
               <option value="Roncesvalles, Tolima-Sur">
-              <option value="Rovira, Tolima-Meseta">
+              <option value="Rovira, Tolima-Centro">
               <option value="Saldaña, Tolima-Sur">
               <option value="San antonio, Tolima-Sur">
-              <option value="San luis, Tolima-Meseta">
+              <option value="San luis, Tolima-Centro">
               <option value="Santa isabel, Tolima-Norte">
               <option value="Suarez, Tolima-Sur">
-              <option value="Valle de san juan, Tolima-Meseta">
+              <option value="Valle de san juan, Tolima-Centro">
               <option value="Venadillo, Tolima-Norte">
               <option value="Villahermosa, Tolima-Norte">
               <option value="Villarrica, Tolima-Sur">
@@ -868,6 +871,7 @@ labores de cultivo.</h2>
               <option value="Santa rosalia, Vichada">
               <option value="Cumaribo, Vichada">
           </datalist>
+             </select>
         </div>
         <input id="submit" type="button" class="search_icon" value="Buscar">
         <div class="error">
