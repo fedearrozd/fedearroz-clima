@@ -245,10 +245,10 @@
     top: 10%;
 }
 .icon2 img, .icon3 img{
-	    height: 80%;
-    left: 20%;
+    left: 10%;
     position: absolute;
-    top: 10%
+    top: 10%;
+    width: 80%;
 }
 .icon4 img, .icon5 img{    
 	width: 70%;
@@ -336,7 +336,7 @@
     }
     #button_next1{
         height: 0;
-        visibility: hidden;
+        visibility: hidden !important;
         color: white;
     }
     .button_next{    
@@ -345,9 +345,11 @@
         width: 100% !important;
     }
     .text_frame input[type="button"]{
-        width: 100%;
-        border-radius: 15px;
-        margin: 0;
+    width: 100%;
+    border-radius: 15px;
+    margin: 0;
+    top: -10px;
+    position: relative;
     }
     #clima,#actividades{
         top: 250px;
