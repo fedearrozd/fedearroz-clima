@@ -57,7 +57,7 @@ labores de cultivo.</h2>
         <div class="inputs">
           <input list="estaciones" id="ubicacion" type="text" placeholder="Espinal, Tolima">
             <datalist id="estaciones">
-                <select onchange="" id="ubicacion3">
+                <select onchange="alert('test')" id="ubicacion3">
                   <option value = "Medellin, Antioquia">Medellin, Antioquia</option>
                   <option value="Abejorral, Antioquia">Abejorral, Antioquia</option>
                   <option value="Abriaqui, Antioquia">Abriaqui, Antioquia</option>
@@ -971,7 +971,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
       }
       function geocodeAddress(geocoder, resultsMap) {
         ubicacion =document.getElementById('ubicacion').value;
-        if (ubicacion == null){
+        if (ubicacion == ""){
             ubicacion = document.getElementById('ubicacion3').value
         }
         var dpto = ubicacion.split(',')[1];
