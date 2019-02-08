@@ -127,7 +127,7 @@
 }
 .button_next{
 	display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 50px;
 }
 .boletin{
@@ -145,12 +145,14 @@
     width: 21%;
     text-align: center;
     margin-bottom: 0;
+    cursor: pointer;
 }
 .boletin div{
 	width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .boletin div h6{
 	font-family: 'Open Sans Condensed';

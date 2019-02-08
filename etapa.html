@@ -59,9 +59,9 @@ cultivo.
                 <img src="./images/icon_antes.png">
                 <div>
                     <a onclick="irAHistorico()"><img src="./images/icon_estaciones_antes.png"><h3>Conozca el clima histórico de la región</h3></a>
-                    <a href="variedad_antes.html"><img src="./images/icon_prediccion_antes.png"><h3>Selección de variedad y época de siembra</h3></a>
+                    <a onclick="irAVariendad('antes')"><img src="./images/icon_prediccion_antes.png"><h3>Selección de variedad y época de siembra</h3></a>
                     <a onclick="irAPronostico('antes')"><img src="./images/icon_prediccion_antes.png"><h3>Pronostico climático a 6 meses</h3></a>
-                    <a href="semana_antes.html"><img src="./images/icon_tiempo_antes.png"><h3 class="conozca_text">Pronóstico del tiempo para los próximos días</h3></a>
+                    <a onclick="irASemana('antes')"><img src="./images/icon_tiempo_antes.png"><h3 class="conozca_text">Pronóstico del tiempo para los próximos días</h3></a>
                 </div>
             </div>
         </article>
@@ -90,9 +90,9 @@ cultivo.
             <div>
                 <img src="./images/icon_durante.png">
                 <div>
-                    <a href="evaluacion_vegetativa.html"><img src="./images/icon_estaciones_durante.png"><h3 style="font-size: 12px;">Evaluación de las condiciones climáticas actuales, monitoreo de labores y desarrollo del cultivo</h3></a>
-                    <a href="tiempo_atmosferico.html"><img src="./images/icon_satelital_durante.png"><h3>Tiempo Atmosférico Actual</h3></a>
-                    <a href="semana_durante.html"><img src="./images/icon_tiempo_durante.png"><h3>Pronóstico del tiempo para los próximos días</h3></a>
+                    <a onclick="irAEvaluacion('vegetativa')"><img src="./images/icon_estaciones_durante.png"><h3 style="font-size: 12px;">Evaluación de las condiciones climáticas actuales, monitoreo de labores y desarrollo del cultivo</h3></a>
+                    <a onclick="irATiempoAtmosferico('vegetativa')"><img src="./images/icon_satelital_durante.png"><h3>Tiempo Atmosférico Actual</h3></a>
+                    <a onclick="irASemana('durante')"><img src="./images/icon_tiempo_durante.png"><h3>Pronóstico del tiempo para los próximos días</h3></a>
                     <a onclick="irAPronostico('durante')"><img src="./images/icon_prediccion_durante.png"><h3>Pronostico climático a 6 meses</h3></a>
                 </div>
             </div>
@@ -122,9 +122,9 @@ cultivo.
             <div>
                 <img src="./images/icon_despues.png">
                 <div>
-                    <a href="evaluacion_reproductiva.html"><img src="./images/icon_estaciones_despues.png"><h3 style="font-size: 12px;">Evaluación de las condiciones climáticas actuales, monitoreo de labores y desarrollo del cultivo</h3></a>
-                    <a href="tiempo_atmosferico.html"><img src="./images/icon_satelital_despues.png"><h3>Tiempo Atmosférico Actual</h3></a>
-                    <a href="semana_reproductiva.html"><img src="./images/icon_tiempo_despues.png"><h3>Pronóstico del tiempo para los próximos días</h3></a>
+                    <a onclick="irAEvaluacion('reproductiva')"><img src="./images/icon_estaciones_despues.png"><h3 style="font-size: 12px;">Evaluación de las condiciones climáticas actuales, monitoreo de labores y desarrollo del cultivo</h3></a>
+                    <a onclick="irATiempoAtmosferico('reproductiva')"><img src="./images/icon_satelital_despues.png"><h3>Tiempo Atmosférico Actual</h3></a>
+                    <a onclick="irASemana('reproductiva')"><img src="./images/icon_tiempo_despues.png"><h3>Pronóstico del tiempo para los próximos días</h3></a>
                 </div>
             </div>
         </article>
@@ -185,9 +185,21 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
       function irAHistorico(){
         window.location="historico_antes.html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
       }
+      function irAVariendad(etapa){
+        window.location="variedad_"+etapa+".html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
+      }
       function irAPronostico(etapa){
         window.location="pronostico_"+etapa+".html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
       }
+      function irASemana(etapa){
+        window.location="semana_"+etapa+".html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
+      }
+      function irAEvaluacion(etapa){
+        window.location="evaluacion_"+etapa+".html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
+      }
+      function irATiempoAtmosferico(etapa){
+        window.location="tiempo_atmosferico_"+etapa+".html?mun="+municipio+"&depar="+departamento+"&zona="+zona;
+      }+departamento+"&zona="+zona;
     </script>
 </body>
 

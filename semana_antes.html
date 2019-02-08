@@ -43,13 +43,9 @@ Pronóstico del tiempo para los próximos días:</h3>
 			<a href="http://www.pronosticosyalertas.gov.co/web/pronosticos-y-
 alertas/pronosticos">REGIONAL<br/><p>[ IDEAM ]</p></a>
 			<a onclick="irLocal()">LOCAL<br/><p>[ Fuente externa ]</p></a>
-		</article>
-		<article>
-			<div class="button_next">
-					<a href="./etapa.html"><input type="button" name="regresar" value="◂ regresar"/></a>
-			</div>
-		</article>
+		</article> 
 	</section>
+  <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a> 
 		<footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
@@ -80,6 +76,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
         </div>
     </footer>
 <script type="text/javascript">
+var urlComplement = window.location.search
 	var lat= 4.167228;
     var long = -74.899802; 
 	function irLocal(){
@@ -96,6 +93,9 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
           alert("No hay soporte para la geolocalización: podemos desistir o utilizar algún método alternativo");
       }
     }
+    function comeBack(){
+        window.location = "./etapa.html"+urlComplement+"#antes_background"
+     }
 </script>
 </body>
 </html>

@@ -77,11 +77,11 @@
 		</article>
 		<article>
 			<div class="button_next">
-					<a href="./etapa.html"><input type="button" name="regresar" value="◂ regresar"/></a>
 					<input type="button" name="siguiente" value="siguiente ▸" onclick="ir()" />
 				</div>
 		</article>
 	</section>
+	<a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a>  
 		<footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
@@ -112,6 +112,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
         </div>
     </footer>
 <script type="text/javascript">
+	var urlComplement = window.location.search
 	function ir(){
 		var sel = document.getElementById('address').value;
 		var a = sel.split(",");
@@ -148,6 +149,9 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
 		function downloadBoletinNacional(){
 		window.open("./boletines/nacional_boletin.pdf");
 		}
+		function comeBack(){
+    		window.location = "./etapa.html"+urlComplement+"#antes_background"
+ 		 }
 
 </script>
 </body>

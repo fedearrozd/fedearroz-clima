@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style-antes.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
-	<title>Selección de variedad</title>
+	<title>Pronóstico climático a 6 meses</title>
 </head>
 <body>
 	<a href="ayuda.pdf" target="_blank" class="help_button"></a>
@@ -23,10 +23,10 @@
 	<section class="contenedor section1">
 		<article class="section1_article1">
 			<img class="img_title" src="./images/icon_antes.png">
-			<h1>SELECCIÓN DE VARIEDAD Y ÉPOCA DE SIEMBRA</h1>	
+			<h1>PRONÓSTICO CLIMÁTICO A 6 MESES</h1>	
 		</article>
 		<article class="section1_article2">
-			<h3>El Pronóstico agroclimático para el cultivo de arroz brinda información de rendimientos simulados a partir de las condiciones climáticas esperadas (predicciones) para los próximos 6 meses. Esta información le ayudará a tomar dos decisiones claves en la planificación de la campaña: por una parte, la elección de la variedad a sembrar y por otra, la planificación de la fecha de siembra, a partir de los rendimientos estimados, cuyos valores más altos corresponden a las mejores condiciones de desarrollo para el cultivo.</h3>
+			<h3>El objeto de la predicción climática estacional es prever la alteración del clima con respecto al comportamiento histórico, para los siguientes meses. En el caso de la precipitación, esto es, conocer sí lo más probable es que las precipitaciones se presenten  excesivas, normales o deficitarias. Con esta información usted podrá tomar, con anticipación, medidas para hacer frente a condiciones climáticas adversas o para aprovechar mejor la oferta ambiental.</h3>
 		</article>
 	</section>
 	<section class="contenedor section2">
@@ -57,6 +57,23 @@
 	            <option value="Sucre, Majagual, Majagual">Sucre, Majagual, Majagual</option>
 	            <option value="Sucre, San Marcos, Hacienda Eureka">Sucre, San Marcos, Hacienda Eureka</option>
 	        </select>
+		</article>
+		<article class="boletin">
+			<h5>BOLETÍN REGIONAL</h5>
+			<div onclick="downloadBoletinRegional()">
+				<h6>Descargue aquí</h6>
+				<img src="./images/icon_download.png">
+			</div>
+			<h5>BOLETÍN NACIONAL (IDEAM)</h5>
+			<div onclick="downloadBoletinNacional()">
+				<h6>Descargue aquí</h6>
+				<img src="./images/icon_download.png">
+			</div>
+			<h5>BOLETÍN ENOS</h5>
+			<div onclick="downloadBoletinEnos()">
+				<h6>Descargue aquí</h6>
+				<img src="./images/icon_download.png">
+			</div>
 		</article>
 		<article>
 			<div class="button_next">
@@ -95,7 +112,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
         </div>
     </footer>
 <script type="text/javascript">
-	 var urlComplement = window.location.search
+	var urlComplement = window.location.search
 	function ir(){
 		var sel = document.getElementById('address').value;
 		var a = sel.split(",");
@@ -103,7 +120,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
 			a[i] = a[i].trim();
 		}
 		console.log(a);
-        window.location="https://pronosticos.aclimatecolombia.org/Cultivo/"+a[0]+"/"+a[1]+"/"+a[2]+"/arroz";
+        window.location="https://pronosticos.aclimatecolombia.org/Clima/"+a[0]+"/"+a[1]+"/"+a[2];
       }
       function replaceAll(str, term, replacement) {
       		var i = str.indexOf(term);
@@ -113,9 +130,29 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
       		}
   			return str;
 		}
+		var paramstr = window.location.search.substr(1);
+        var paramarr = paramstr.split ("&");
+        var params = {};
+        for ( var i = 0; i < paramarr.length; i++) {
+            var tmparr = paramarr[i].split("=");
+            params[i] = replaceAll(tmparr[1],"%20", "_");
+        }
+        let municipio = params[0].toLowerCase();
+        let departamento = params[1].toLowerCase();
+        let zona = params[2].toLowerCase();
+        function downloadBoletinRegional(){
+		window.open("./boletines/"+departamento+"_boletin.pdf");
+		}
+		function downloadBoletinEnos(){
+		window.open("./boletines/enos_boletin.pdf");
+		}
+		function downloadBoletinNacional(){
+		window.open("./boletines/nacional_boletin.pdf");
+		}
 		function comeBack(){
-    		window.location = "./etapa.html"+urlComplement+"#antes_background"
+    		window.location = "./modo_avanzado.html"
  		 }
+
 </script>
 </body>
 </html>

@@ -138,7 +138,7 @@
 }
 .button_next{
 	display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 50px;
 }
 .boletin{

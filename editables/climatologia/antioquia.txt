@@ -3,7 +3,7 @@ Los meses mas lluviosos son abril, mayo, septiembre y octubre
 Los meses menos lluviosos son diciembre y enero	
 Tiene dos temporadas lluviosas, la primera inicia en marzo y finaliza en junio y la segunda inicia en agosto y finaliza en noviembre
 #Temp_max,Temperatura. Máx.
-Las mayores temperaturas maximas promedio se registran hacia los meses de febrero y marzo.	
+Las mayores temperaturas máximas promedio se registran hacia los meses de febrero y marzo.	
 Las menores temperaturas maximas promedio se registran hacia los meses de octubre y noviembre.
 #Temp_min,Temperatura. Mín.
 Las mayores temperaturas minimas promedio se registran hacia los meses de abril y mayo.	

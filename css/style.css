@@ -88,6 +88,19 @@ body{
     margin-bottom: 0;
     height: 27px;
 }
+.button_come_back{
+	display: block;
+	font-size: 15px;
+	color: white;
+	background: rgb(123,98,36);
+	margin: 40px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+	line-height: 2;
+	position: fixed;
+	top: 20%;
+	left: 5%;
+}
 .fmi{
 	background-image: url(../images/logo_fmi.png);
 }

@@ -4,6 +4,7 @@
 	background-size: cover;
 	height: 500px;
 	font-family: 'Fira Sans', sans-serif;
+    background-position: center;
 }
 .title{
 	padding-top: 300px;
@@ -206,7 +207,8 @@
 /*DESPUES*/
 .despues_background{
 	background-image: url(../images/despues.jpg);
-	background-size: cover; 
+	background-size: contain;
+    background-position: center; 
 }
 .despues_background h1{
 	padding-top: 150px;

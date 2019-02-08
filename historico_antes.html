@@ -119,6 +119,7 @@
       </div>
     </article>
   </section>
+          <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a>  
     <footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
@@ -221,6 +222,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
   </script>
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
   <script>
+  var urlComplement = window.location.search
   $(function() 
   {
     $(document).ready( function()
@@ -260,6 +262,9 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
           }
         }
     }
+  }
+  function comeBack(){
+    window.location = "./etapa.html"+urlComplement+"#antes_background"
   }
  </script>
 </body>

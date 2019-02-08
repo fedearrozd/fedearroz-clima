@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./css/style-despues.css">
+  <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./css/style-antes.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
-    <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
 	<title>Pronóstico de la semana</title>
 </head>
 <body>
@@ -22,11 +22,12 @@
 	</section>
 	<section class="contenedor section1">
 		<article class="section1_article1">
-			<img class="img_title" src="./images/icon_despues.png">
+			<img class="img_title" src="./images/icon_antes.png">
 			<h1>PRONÓSTICO DEL TIEMPO</h1>	
 		</article>
 		<article class="section1_article2">
-			<h3>Con la ayuda del pronóstico del tiempo usted puede programar para los siguientes días, las labores que requieren de condiciones meteorológicas específicas, bien sea para poder ejecutarlas o para garantizar el éxito de los resultados. Ejemplo de esto son Controles de malezas, Fertilizaciones, Controles Fitosanitarios, manejo del agua de riego, etc. Esta información le ayudará evitar la pérdida de eficiencia de las aplicaciones por lluvias, reducir los sobrecostos y optimizar sus recursos.
+			<h3>Con la ayuda del pronóstico del tiempo usted puede programar para los siguientes días, las labores que requieren de condiciones meteorológicas específicas, bien sea para poder ejecutarlas o para garantizar el éxito de los resultados. Ejemplo de esto son: labores de preparación y adecuación del suelo, siembra en surco con sembradora, germinación de la semilla, aplicación de agroquímicos, cosecha, etc. Esta información le ayudará a disminuir sobrecostos y optimizar sus recursos.
+
 </h3>
 		</article>
 	</section>
@@ -35,15 +36,16 @@
 			<img class="icon_tiempo" src="./images/icon_tiempo.png">
 		</article>
 		<article class="list">
-			<h3 class="text_tiempo">Pronóstico del tiempo para los próximos días:</h3>
+			<h3 class="text_tiempo">
+Pronóstico del tiempo para los próximos días:</h3>
 		</article>
 		<article class="button_reg_loc">
 			<a href="http://www.pronosticosyalertas.gov.co/web/pronosticos-y-
 alertas/pronosticos">REGIONAL<br/><p>[ IDEAM ]</p></a>
-			<a onclick="irLocal()">LOCAL<br/><p>[ Fuente Externa ]</p></a>
-		</article>
+			<a onclick="irLocal()">LOCAL<br/><p>[ Fuente externa ]</p></a>
+		</article> 
 	</section>
-      <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a> 
+  <a onclick="comeBack()"><input  class="button_come_back"  type="button" name="regresar" value="◂ regresar"/></a> 
 		<footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
@@ -74,7 +76,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
         </div>
     </footer>
 <script type="text/javascript">
-  var urlComplement = window.location.search
+var urlComplement = window.location.search
 	var lat= 4.167228;
     var long = -74.899802; 
 	function irLocal(){
@@ -92,7 +94,7 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
       }
     }
     function comeBack(){
-        window.location = "./etapa.html"+urlComplement+"#despues_background"
+        window.location = "./modo_avanzado.html"
      }
 </script>
 </body>
