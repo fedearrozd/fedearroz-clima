@@ -355,4 +355,10 @@
         margin: 0 5%;
         width: 90%;
     }
+    #ubicacion {
+        visibility: hidden;
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
 }
