@@ -1,6 +1,9 @@
 body{
 	margin: 0;
 }
+#logo_fna{
+	width: 250px;
+}
 .contenedor{
 	max-width: 1000px;
 	margin: 0 auto;
