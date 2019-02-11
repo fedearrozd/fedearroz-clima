@@ -110,3 +110,29 @@
     font-size: 30px;
     margin: 0;
 }
+@media screen and (max-width: 500px){
+    .section1 .title{
+        font-size: 20px;
+        line-height: initial;
+    }
+    .vertical_line{
+        height: 150px;
+    }
+    .description{
+        font-size: 15px;
+        line-height: initial;
+    }
+    .section2 a{
+        flex-wrap: wrap;
+    }
+    .section2 .article_right a{
+        flex-wrap: wrap-reverse;
+    }
+    .section2 .article_left div .top{
+        margin: 10px;
+    }
+    .section2 .article_left div .bottom , .section2 .article_right div .bottom{
+        border-top: 0;
+    }
+    .article_right{
+        margin: 0 0 40px 0;

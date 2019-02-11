@@ -24,7 +24,8 @@
 		
 	</section>
 	<section>
-		<nav class="menu">
+    <img src="./images/toggle.png" class="toogle" onclick="toggleMenu()">
+		<nav class="menu" id="menu">
             <ul class="contenedor">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
                     <li>Habla con nosotros</li>
@@ -1063,6 +1064,10 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
           text = text.replace(c1,c2);
         }
         return text;
+      }
+      function toggleMenu(){
+        $menu = document.getElementById('menu');
+        $menu.classList.toggle('active')
       }
     </script>
 </body>
