@@ -80,6 +80,10 @@ var urlComplement = window.location.search
 	var lat= 4.167228;
     var long = -74.899802; 
 	function irLocal(){
+    if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+        alert('Safari');
+    }
 		if (navigator.geolocation)
      	 {
           navigator.geolocation.getCurrentPosition(function(pos) {
