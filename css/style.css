@@ -143,10 +143,11 @@ body{
 	}
 	.menu{
 		width: 100%;
-    	height: 100%;
+    	height: 110%;
     	top: 0;
     	z-index: 1;
     	background: rgba(84,107,33, 0.9);
+    	font-size: 25px;
 	}
 	.menu ul{
 		flex-wrap: wrap;
