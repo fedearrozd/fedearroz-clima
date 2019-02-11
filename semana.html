@@ -80,23 +80,25 @@ var urlComplement = window.location.search
 	var lat= 4.167228;
     var long = -74.899802; 
 	function irLocal(){
-    if(navigator.userAgent.indexOf("Safari") != -1)
-    {
-        alert('Safari');
-    }
-		if (navigator.geolocation)
-     	 {
-          navigator.geolocation.getCurrentPosition(function(pos) {
-            lat = pos.coords.latitude;
-            long = pos.coords.longitude;
-            alert("Se está dirigiendo a una página externa");
-        	window.open("https://www.windy.com/?rain,"+lat+","+long+",8");
-          }); 
-      }
-      else
+      if(navigator.userAgent.indexOf("Safari") != -1)
       {
           alert("Se está dirigiendo a una página externa");
           window.open("https://www.windy.com/?rain,4.167228,-74.899802,8");
+      }else{
+        if (navigator.geolocation)
+         {
+            navigator.geolocation.getCurrentPosition(function(pos) {
+              lat = pos.coords.latitude;
+              long = pos.coords.longitude;
+              alert("Se está dirigiendo a una página externa");
+            window.open("https://www.windy.com/?rain,"+lat+","+long+",8");
+            }); 
+        }
+        else
+        {
+            alert("Se está dirigiendo a una página externa");
+            window.open("https://www.windy.com/?rain,4.167228,-74.899802,8");
+        }
       }
     }
     function comeBack(){
