@@ -4,6 +4,9 @@ body{
 .toogle{
 	visibility: hidden;
 	z-index: -1;
+	height: 0;
+	width: 0;
+	position: fixed;
 }
 #logo_fna{
 	width: 250px;
@@ -131,6 +134,7 @@ body{
 		left: 0;
 		width:50px;
 		z-index: 2;
+		height: 50px;
 	}
 	.active{
 		left: 0 !important;
