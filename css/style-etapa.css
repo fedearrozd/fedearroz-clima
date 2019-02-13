@@ -75,11 +75,12 @@
 	text-decoration: none;
 }
 .barra_horizontal{
-	height: 10px;
+    height: 10px;
     position: absolute;
-    width: 80%;
+    width: 60%;
     background: rgb(84,107,33);
     z-index: -1;
+    left: 20%;
 }
 .ciclo{
     width: 100%;
