@@ -16,6 +16,10 @@
 .header{
 	margin: 0;
 }
+.etapa{
+    display: flex;
+    align-items: center;
+}
 .header figure{
 	margin: 0;
 }
@@ -53,8 +57,9 @@
 	background: rgb(178,204,69);
 }
 .etapa article{
+    width: 100%;
 	display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }

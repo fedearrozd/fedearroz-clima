@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
   <title>Histórico del clima</title>
 </head>
-<body>
+<body onload="showVariable('precipitacion','graf_prec','map_prec')">
   <a href="ayuda.pdf" target="_blank" class="help_button"></a>
   <section class="logo">
     <header class="contenedor header">
@@ -58,7 +58,7 @@
   <section class="contenedor section3">
     <article class="">
       <div class="icons">
-            <div class="icon1" onmouseenter="show('precip'); showVariable('precipitacion','graf_prec','map_prec')" onmouseleave="hide('precip')">
+            <div class="icon1"  onmouseenter="show('precip'); showVariable('precipitacion','graf_prec','map_prec')" onmouseleave="hide('precip')">
               <div>
                 <h6 class="precip" id="precip">Precipitaciones</h6>
                 <div class="border_left"></div>
