@@ -1,11 +1,19 @@
 /*HEADER*/
 .portada{
-	background-image: url('../images/antes.jpg');
+	background-image: url('../images/durante.jpg');
 	background-size: cover;
 	height: 500px;
 	font-family: 'Fira Sans', sans-serif;
 	background-position: center;
-}.header{
+}
+.portada_reproductiva{
+    background-image: url('../images/despues.jpg');
+    background-size: cover;
+    height: 500px;
+    font-family: 'Fira Sans', sans-serif;
+    background-position: center;
+}
+.header{
 	margin: 0;
 }
 .header figure{
