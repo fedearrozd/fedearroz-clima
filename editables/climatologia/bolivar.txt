@@ -1,18 +1,18 @@
-#Precip,Precipitacion
-Los meses mas lluviosos son agosto y octubre	
-Los meses menos lluviosos son enero y febrero	
-La inicia en abril y finaliza en noviembre
+#Precip,Precipitación
+Los meses mas lluviosos son agosto y octubre
+Los meses menos lluviosos son enero y febrero
+La temporada de lluvias inicia en abril y finaliza en noviembre
 #Temp_max,Temperatura. Máx.
-Las mayores temperaturas maximas promedio se registran hacia los meses de febrero y marzo.	
-Las menores temperaturas maximas promedio se registran hacia los meses de octubre y noviembre.
+Las mayores temperaturas máximas promedio se registran hacia los meses de febrero y marzo.
+Las menores temperaturas máximas promedio se registran hacia los meses de octubre y noviembre.
 #Temp_min,Temperatura. Mín.
-Las mayores temperaturas minimas promedio se registran hacia los meses de mayo y junio.	
-Las menores temperaturas minimas promedio se registran hacia los meses de diciembre y enero.
+Las mayores temperaturas mínimas promedio se registran hacia los meses de mayo y junio.
+Las menores temperaturas mínimas promedio se registran hacia los meses de diciembre y enero.
 #Luz,Brillo Solar
-La mayor radiacion solar se registran hacia los meses de enero y febrero.	
-La menor radiacion solar se registran hacia los meses de septiembre y octubre.
+La mayor radiación solar se registran hacia los meses de enero y febrero.
+La menor radiación solar se registran hacia los meses de septiembre y octubre.
 #Lluvia,N. días de lluvia
-El mes con mayor numero de dias con lluvia es octubre con un rango entre 9-21 dias.
+El mes con mayor número de días con lluvia es octubre con un rango entre 9-21 días.
 #Humedad,Humedad Relativa
-La humedad relativa promedio mas alta se registran hacia los meses de septiembre y octubre.	
-La humedad relativa promedio mas baja se registran hacia los meses de febrero y marzo.
+La humedad relativa promedio mas alta se registra hacia los meses de septiembre y octubre.
+La humedad relativa promedio mas baja se registra hacia los meses de febrero y marzo.

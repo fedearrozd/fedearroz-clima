@@ -1,12 +1,12 @@
-#Precip,Precipitacion
-Los meses mas lluviosos son mayo y junio	
-Los meses menos lluviosos son enero y febrero	
-La inicia en abril y finaliza en noviembre
+#Precip,Precipitación
+Los meses mas lluviosos son mayo y junio
+Los meses menos lluviosos son enero y febrero
+La temporada de lluvias inicia en abril y finaliza en noviembre
 #Temp_min,Temperatura. Mín.
-Las mayores temperaturas minimas promedio se registran hacia los meses de diciembre y enero.	
-Las menores temperaturas minimas promedio se registran hacia los meses de septiembre y octubre.
+Las mayores temperaturas mínimas promedio se registran hacia los meses de diciembre y enero.	
+Las menores temperaturas mínimas promedio se registran hacia los meses de septiembre y octubre.
 #Lluvia,N. días de lluvia
-El mes con mayor numero de dias con lluvia es mayo con un rango entre 14-27 dias.
+El mes con mayor numero de días con lluvia es mayo con un rango entre 14-27 días.
 #Humedad,Humedad Relativa
 La humedad relativa promedio mas alta se registran hacia los meses de junio y julio.	
 La humedad relativa promedio mas baja se registran hacia los meses de enero y febrero.

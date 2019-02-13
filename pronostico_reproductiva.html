@@ -102,8 +102,38 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
         </div>
     </footer>
 <script type="text/javascript">
+	function crearAlerta(){
+		var $body = document.body;
+		var leftD = ($body.clientWidth/2) - 100;
+		var topD = 250;
+		if (document.getElementById('DivAlert') == null) {
+			var nodeDiv = document.createElement('div');
+			var textNode = document.createTextNode("Espere 3 segundos. Lo estamos redirigiendo a una herramienta de recursos externos...");
+			nodeDiv.style.visibility = "visible";
+			nodeDiv.style.fontFamily = "Open Sans Condensed";
+			nodeDiv.style.fontSize = "25px";
+			nodeDiv.style.position = "fixed";
+			nodeDiv.style.top = topD+ "px";
+			nodeDiv.style.left = leftD +"px";
+			nodeDiv.style.width = "300px";
+			nodeDiv.style.height = "200px";
+			nodeDiv.style.background = "rgb(220,220,220)";
+			nodeDiv.style.textAlign = "center";
+			nodeDiv.style.padding = "40px";
+			nodeDiv.style.borderRadius = "10px";
+			nodeDiv.id = "DivAlert";
+			nodeDiv.appendChild(textNode);
+			$body.appendChild(nodeDiv);
+		}else{
+			document.getElementById('DivAlert').style.visibility = "visible";
+		}
+	}
 	function ir(){
-		alert("Se está dirigiendo a una página externa");
+		crearAlerta();
+		setTimeout("abrirEnlace()", 3000);
+    }
+    function abrirEnlace(){
+      	document.getElementById('DivAlert').style.visibility = "hidden";
 		var sel = document.getElementById('address').value;
 		var a = sel.split(",");
 		for(i = 0; i< a.length ; i++){

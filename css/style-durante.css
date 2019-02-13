@@ -149,19 +149,21 @@
     width: 100%;
 }
 .boletin h5{
-	color: rgb(84,107,33);
+    color: rgb(84,107,33);
     font-family: 'Open Sans Condensed';
     font-size: 20px;
     border-bottom: 2px solid;
     width: 21%;
     text-align: center;
     margin-bottom: 0;
+    cursor: pointer;
 }
 .boletin div{
-	width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .boletin div h6{
 	font-family: 'Open Sans Condensed';

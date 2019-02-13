@@ -40,8 +40,7 @@
 Pronóstico del tiempo para los próximos días:</h3>
 		</article>
 		<article class="button_reg_loc">
-			<a href="http://www.pronosticosyalertas.gov.co/web/pronosticos-y-
-alertas/pronosticos" target="_blank" onclick="alert('Se está dirigiendo a una página externa')">REGIONAL<br/><p>[ IDEAM ]</p></a>
+			<a onclick="ir()">REGIONAL<br/><p>[ IDEAM ]</p></a>
 			<a onclick="irLocal()">LOCAL<br/><p>[ Fuente externa ]</p></a>
 		</article> 
 	</section>
@@ -79,28 +78,48 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
 var urlComplement = window.location.search
 	var lat= 4.167228;
     var long = -74.899802; 
-	function irLocal(){
-      if(navigator.userAgent.indexOf("Safari") != -1)
-      {
-          alert("Se está dirigiendo a una página externa");
-          window.open("https://www.windy.com/?rain,4.167228,-74.899802,8");
+    function crearAlerta(){
+      var $body = document.body;
+      var leftD = ($body.clientWidth/2) - 100;
+      var topD = 250;
+      if (document.getElementById('DivAlert') == null) {
+        var nodeDiv = document.createElement('div');
+        var textNode = document.createTextNode("Espere 3 segundos. Lo estamos redirigiendo a una herramienta de recursos externos...");
+        nodeDiv.style.visibility = "visible";
+        nodeDiv.style.fontFamily = "Open Sans Condensed";
+        nodeDiv.style.fontSize = "25px";
+        nodeDiv.style.position = "fixed";
+        nodeDiv.style.top = topD+ "px";
+        nodeDiv.style.left = leftD +"px";
+        nodeDiv.style.width = "300px";
+        nodeDiv.style.height = "200px";
+        nodeDiv.style.background = "rgb(220,220,220)";
+        nodeDiv.style.textAlign = "center";
+        nodeDiv.style.padding = "40px";
+        nodeDiv.style.borderRadius = "10px";
+        nodeDiv.id = "DivAlert";
+        nodeDiv.appendChild(textNode);
+        $body.appendChild(nodeDiv);
       }else{
-        if (navigator.geolocation)
-         {
-            navigator.geolocation.getCurrentPosition(function(pos) {
-              lat = pos.coords.latitude;
-              long = pos.coords.longitude;
-              alert("Se está dirigiendo a una página externa");
-            window.open("https://www.windy.com/?rain,"+lat+","+long+",8");
-            }); 
-        }
-        else
-        {
-            alert("Se está dirigiendo a una página externa");
-            window.open("https://www.windy.com/?rain,4.167228,-74.899802,8");
-        }
+        document.getElementById('DivAlert').style.visibility = "visible";
       }
-    }
+  }
+  function ir(){
+    crearAlerta();
+    setTimeout("abrirEnlaceIDEAM()", 3000);
+  }
+  function abrirEnlaceWindy(){
+    document.getElementById('DivAlert').style.visibility = "hidden";
+    window.open("https://www.windy.com/");
+  }
+  function abrirEnlaceIDEAM(){
+    document.getElementById('DivAlert').style.visibility = "hidden";
+    window.open("http://www.pronosticosyalertas.gov.co/web/pronosticos-y-alertas/pronosticos");
+  }
+	function irLocal(){
+    crearAlerta();
+    setTimeout("abrirEnlaceWindy()", 3000);
+  }
     function comeBack(){
         window.location = "./modo_avanzado.html"
      }

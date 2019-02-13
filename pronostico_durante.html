@@ -59,8 +59,18 @@
 	        </select>
 		</article>
 		<article class="boletin">
-			<h5>BOLETÍN AGROCLIMÁTICO</h5>
-			<div onclick="downloadBoletin()">
+			<h5>BOLETÍN REGIONAL</h5>
+			<div onclick="downloadBoletinRegional()">
+				<h6>Descargue aquí</h6>
+				<img src="./images/icon_download.png">
+			</div>
+			<h5>BOLETÍN NACIONAL (IDEAM)</h5>
+			<div onclick="downloadBoletinNacional()">
+				<h6>Descargue aquí</h6>
+				<img src="./images/icon_download.png">
+			</div>
+			<h5>BOLETÍN ENOS</h5>
+			<div onclick="downloadBoletinEnos()">
 				<h6>Descargue aquí</h6>
 				<img src="./images/icon_download.png">
 			</div>
@@ -103,8 +113,38 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
     </footer>
 <script type="text/javascript">
 		var urlComplement = window.location.search
+	function crearAlerta(){
+		var $body = document.body;
+		var leftD = ($body.clientWidth/2) - 100;
+		var topD = 250;
+		if (document.getElementById('DivAlert') == null) {
+			var nodeDiv = document.createElement('div');
+			var textNode = document.createTextNode("Espere 3 segundos. Lo estamos redirigiendo a una herramienta de recursos externos...");
+			nodeDiv.style.visibility = "visible";
+			nodeDiv.style.fontFamily = "Open Sans Condensed";
+			nodeDiv.style.fontSize = "25px";
+			nodeDiv.style.position = "fixed";
+			nodeDiv.style.top = topD+ "px";
+			nodeDiv.style.left = leftD +"px";
+			nodeDiv.style.width = "300px";
+			nodeDiv.style.height = "200px";
+			nodeDiv.style.background = "rgb(220,220,220)";
+			nodeDiv.style.textAlign = "center";
+			nodeDiv.style.padding = "40px";
+			nodeDiv.style.borderRadius = "10px";
+			nodeDiv.id = "DivAlert";
+			nodeDiv.appendChild(textNode);
+			$body.appendChild(nodeDiv);
+		}else{
+			document.getElementById('DivAlert').style.visibility = "visible";
+		}
+	}
 	function ir(){
-		alert("Se está dirigiendo a una página externa");
+		crearAlerta();
+		setTimeout("abrirEnlace()", 3000);
+    }
+    function abrirEnlace(){
+      	document.getElementById('DivAlert').style.visibility = "hidden";
 		var sel = document.getElementById('address').value;
 		var a = sel.split(",");
 		for(i = 0; i< a.length ; i++){
@@ -131,8 +171,14 @@ FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
         let municipio = params[0].toLowerCase();
         let departamento = params[1].toLowerCase();
         let zona = params[2].toLowerCase();
-        function downloadBoletin(){
-		window.open("./boletines/"+departamento+"_boletin_agosto_asondef.pdf");
+        function downloadBoletinRegional(){
+		window.open("./boletines/"+departamento+"_boletin.pdf");
+		}
+		function downloadBoletinEnos(){
+		window.open("./boletines/enos_boletin.pdf");
+		}
+		function downloadBoletinNacional(){
+		window.open("./boletines/nacional_boletin.pdf");
 		}
 		 function comeBack(){
         window.location = "./etapa.html"+urlComplement+"#durante_background"
