@@ -125,7 +125,7 @@
     flex-wrap: nowrap;
 }
 .antes_text div img{
-    width: 250px;
+    max-width: 230px;
     margin-left: 70px;
 }
 .list_text div div a img{
