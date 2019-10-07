@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no"/>
-	<link rel="stylesheet" type="text/css" href="./css/style-index.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
-	<title>¿Va a llover?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="./css/style-index.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Open+Sans+Condensed:700|Oswald:500|Source+Serif+Pro" rel="stylesheet">
+    <title>¿Va a llover?</title>
 </head>
+
 <body>
-	<section class="logo">
-		<header class="contenedor header">
-			<figure>
-				<a href="./index.html"><img id="logo_fna" src="./images/logo.jpg"></a>
-			</figure>
-		</header>
-	</section>
-	<section class="portada">
-		<div class="contenedor">
-			<h1 class="title">¿Va a llover o no?</h1>
-			<h3 class="subtitle">Servicio Climático para el cultivo de Arroz</h3>
-		</div>
-		
-	</section>
-	<section>
-    <img src="./images/toggle.png" class="toogle" onclick="toggleMenu()">
-		<nav class="menu" id="menu">
+    <section class="logo">
+        <header class="contenedor header">
+            <figure>
+                <a href="./index.html"><img id="logo_fna" src="./images/logo.jpg"></a>
+            </figure>
+        </header>
+    </section>
+    <section class="portada">
+        <div class="contenedor">
+            <h1 class="title">¿Va a llover o no?</h1>
+            <h3 class="subtitle">Servicio Climático para el cultivo de Arroz</h3>
+        </div>
+
+    </section>
+    <section>
+        <img src="./images/toggle.png" class="toogle" onclick="toggleMenu()">
+        <nav class="menu" id="menu">
             <ul class="contenedor">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfw0NyjZuWvtsKxgWdJwrdmVfyXWUe8_pkFYRzXR4qwjCgMfg/viewform">
                     <li>Habla con nosotros</li>
@@ -36,28 +38,31 @@
                 <a href="documentos.html">
                     <li>Documentos</li>
                 </a>
-                <a href="videos.html"><li>Ayudas Audiovisuales</li></a>
-                <a href="modo_avanzado.html"><li>Modo Avanzado</li></a>
+                <a href="videos.html">
+                    <li>Ayudas Audiovisuales</li>
+                </a>
+                <a href="modo_avanzado.html">
+                    <li>Modo Avanzado</li>
+                </a>
             </ul>
         </nav>
-	</section>
-	<section class="contenedor section4">
-		<h2 class="description">Esta pregunta simple no tiene una respuesta sencilla. Por tal motivo, lo invitamos a que explore esta plataforma que le ayudará a obtener respuesta a sus inquietudes.<p></p>
-Aquí encontrará apoyo para tomar decisiones climáticamente inteligentes respecto a sus
-
-labores de cultivo.</h2>
-		<article class="mapa">
-      <div id="clima" name="imagenes"></div>
-      <div id="actividades" name="imagenes"></div>
-			<div class="map_frame">
-				<div id="map"></div>
-			</div>
-			<div class="text_frame">
-				<h1>¡Empiece aquí!</h1>
-				<h3>¿Dónde se ubican sus lotes? (Municipio, Departamento)</h3>
-        <div class="inputs">
-          <input list="estaciones" id="ubicacion" type="text" placeholder="Espinal, Tolima-Centro">
-            <datalist id="estaciones">
+    </section>
+    <section class="contenedor section4">
+        <h2 class="description">Esta pregunta simple no tiene una respuesta sencilla. Por tal motivo, lo invitamos a que explore esta plataforma que le ayudará a obtener respuesta a sus inquietudes.
+            <p></p>
+            Aquí encontrará apoyo para tomar decisiones climáticamente inteligentes respecto a sus labores de cultivo.</h2>
+        <article class="mapa">
+            <div id="clima" name="imagenes"></div>
+            <div id="actividades" name="imagenes"></div>
+            <div class="map_frame">
+                <div id="map"></div>
+            </div>
+            <div class="text_frame">
+                <h1>¡Empiece aquí!</h1>
+                <h3>¿Dónde se ubican sus lotes? (Municipio, Departamento)</h3>
+                <div class="inputs">
+                    <input list="estaciones" id="ubicacion" type="text" placeholder="Espinal, Tolima-Centro">
+                    <datalist id="estaciones">
                 <select id="ubicacion3">
                     <option value="Abejorral, Antioquia">Abejorral, Antioquia</option>
                   <option value="Abrego, Norte de Santander">Abrego, Norte de Santander</option>
@@ -1183,36 +1188,36 @@ labores de cultivo.</h2>
                 </select>
               
           </datalist>
-        </div>
-        <input id="submit" type="button" class="search_icon" value="Buscar">
-        <div class="error">
-          <h3 id="error">*Municipio y Departamento son campos necesarios para continuar la búsqueda*</h3>
-        </div>
-				<div class="icons" id="icons">
-					<div class="icon1" onmouseenter="show('clima');show('clima1')" onmouseleave="hide('clima'); hide('clima1')">
-						<div id="clima1">
-							<h6 class="precip">Climatología</h6>
-							<div class="border_left border1"></div>
-						</div>
-						<img src="./images/precip.png">
-					</div>
-					<div id="icon2" class="icon2" onmouseenter="show('actividades');show('actividades1')" onmouseleave="hide('actividades');hide('actividades1')">
-						<div id="actividades1">
-							<h6 class="temp_min">Actividades</h6>
-							<div class="border_left border2"></div>
-						</div>
-						<img src="./images/temp_min.png">
-					</div>
+                </div>
+                <input id="submit" type="button" class="search_icon" value="Buscar">
+                <div class="error">
+                    <h3 id="error">*Municipio y Departamento son campos necesarios para continuar la búsqueda*</h3>
+                </div>
+                <div class="icons" id="icons">
+                    <div class="icon1" onmouseenter="show('clima');show('clima1')" onmouseleave="hide('clima'); hide('clima1')">
+                        <div id="clima1">
+                            <h6 class="precip">Climatología</h6>
+                            <div class="border_left border1"></div>
+                        </div>
+                        <img src="./images/precip.png">
+                    </div>
+                    <div id="icon2" class="icon2" onmouseenter="show('actividades');show('actividades1')" onmouseleave="hide('actividades');hide('actividades1')">
+                        <div id="actividades1">
+                            <h6 class="temp_min">Actividades</h6>
+                            <div class="border_left border2"></div>
+                        </div>
+                        <img src="./images/temp_min.png">
+                    </div>
 
-				</div>
-				<h2 class="button_next" id="button_next1">CALENDARIOS</h2>
-				<div class="button_next" id="button_next">
-					<input type="button" name="siguiente" value="Siguiente ▸" onclick="irAEtapa()" />
-				</div>
-			</div>
-		</article>
-	</section>
-	<footer class="footer">
+                </div>
+                <h2 class="button_next" id="button_next1">CALENDARIOS</h2>
+                <div class="button_next" id="button_next">
+                    <input type="button" name="siguiente" value="Siguiente ▸" onclick="irAEtapa()" />
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
         <div class="menu_footer contenedor">
             <ul>
                 <li>
@@ -1231,155 +1236,168 @@ labores de cultivo.</h2>
         </div>
         <div class="info_footer contenedor">
             <h5>
-FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
+                FEDEARROZ Oficina Principal: Carrera 100 No. 25H-55, Bogotá Colombia</h5>
             <h5>Correo Electrónico: comunica@fedearroz.com.co</h5>
         </div>
         <div class="logos">
-          <div class="contenedor">
-            <h3>CON EL APOYO DE:</h3>
-            <div class="fmi"></div>
-          </div>
+            <div class="contenedor">
+                <h3>CON EL APOYO DE:</h3>
+                <div class="fmi"></div>
+            </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js" type="text/javascript"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAITfEOAmH0M6fdbauBYoP8Mj6Oh4PPQKs&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCOkaYuA6WpSJVR_ScpKu5LX-OCw6v2mo&callback=initMap">
     </script>
     <script type="text/javascript">
-    	var lat= 4.167228;
-      var long = -74.899802;      
-      var map;
-      var municipio;
-      var ubicacion;
-      var departamento;
-      var clima;
-      var actividades;
-      var zona = "";
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
-          center: {lat: lat, lng: long}
-        });
-        var geocoder = new google.maps.Geocoder();
-        document.getElementById('submit').addEventListener('click', function() {
-          geocodeAddress(geocoder, map);
-        });
-      }
-      function setLayer(departamento){
-          var layer = new google.maps.FusionTablesLayer({
-          map: map,
-      heatmap: { enabled: false },
-      query: {
-        select: "col2",
-        from: "1P5mDY6KNIgNEC5dVagva1kFcIN1sqbKLieuWq14j",
-        where: "col1 \x3d \x27"+departamento.toLowerCase()+"\x27"
-      },
-      options: {
-        styleId: 2,
-        templateId: 3
-      }
-        });
-        layer.setMap(map);
-      }
-      function geocodeAddress(geocoder, resultsMap) {
-        ubicacion =document.getElementById('ubicacion').value;
-        if (ubicacion == ""){
-            ubicacion = document.getElementById('ubicacion3').value
-        }
-        var dpto = ubicacion.split(',')[1];
-        departamento = dpto.split('-')[0].trim();
-        municipio = ubicacion.split(',')[0];
-        municipio = replaceAll(municipio, ' ','_');
-        ubicacion = replaceAll(ubicacion,',','_');
-        ubicacion = replaceAll(ubicacion,' ','');
-        var ubicacion2 = departamento+"_"+municipio;
-        ubicacion2 = replaceAll(ubicacion2,',','_');
-        ubicacion2 = replaceAll(ubicacion2,' ','');
+        var lat = 4.167228;
+        var long = -74.899802;
+        var map;
+        var municipio;
+        var ubicacion;
+        var departamento;
+        var clima;
+        var actividades;
+        var zona = "";
 
-        var departamento3 = replaceAll(departamento, ' ','_');
-        departamento3 = departamento3.toLowerCase();
-        departamento3 = replaceAll(departamento3,'ñ','n');
-        municipio = replaceAll(municipio,'ñ','n');
-        console.log(departamento3+"_"+municipio);
-        var zonaNum = dpto.split('-');
-        if(zonaNum.length>1){
-          zona = dpto.split('-')[1];
-        }
-        clima = document.getElementsByName('imagenes')[0];
-        actividades = document.getElementsByName('imagenes')[1];
-        console.log(departamento);
-        clima.style.backgroundImage= "url('./images/departamentos/climatologia/"+departamento3+"_"+municipio.toLowerCase()+"_climatologia"+".png')";
-        
-
-        //ACTIVIDADES BACKGROUND
-        if (departamento == "Tolima" || departamento =="Huila" || departamento == "Valle del Cauca" || departamento == "Cauca"){
-          
-            actividades.style.background= "url('./images/departamentos/actividades/Calendario_CENTRO_Riego_logo.jpg')";
-        }
-        else if(departamento == "Meta" || departamento =="Casanare" ||departamento=="Vichada"||departamento=="Arauca"){
-          console.log(departamento);
-          actividades.style.background= "url('./images/departamentos/actividades/Calendario_LLANOS_Riego_logo.jpg')";
-        }
-        else if(departamento=="Cordoba"||departamento=="Sucre"||departamento=="Bolivar"||departamento=="Antioquia"){
-          console.log(departamento);
-          actividades.style.background= "url('./images/departamentos/actividades/Calendario_CARIBE_HUMEDO_Riego-Secano_logo.jpg')";
-        }
-        else if(departamento=="Cesar"||departamento=="La Guajira"||departamento=="Magdalena"){
-          console.log(departamento);  
-          actividades.style.background= "url('./images/departamentos/actividades/Calendario_CARIBE_SECO_Cesar_Riego_logo.jpg')";
-        }
-        else if(departamento=="Norte de Santander"||departamento=="Santander"){
-          console.log(departamento);
-          actividades.style.background= "url('./images/departamentos/actividades/Calendario_CARIBE_SECO_Riego_logo.jpg')";
-        }
-        else{
-          console.log(departamento);
-          var iconAct = document.getElementById('icon2').style.visibility = "hidden";
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 7,
+                center: {
+                    lat: lat,
+                    lng: long
+                }
+            });
+            var geocoder = new google.maps.Geocoder();
+            document.getElementById('submit').addEventListener('click', function() {
+                geocodeAddress(geocoder, map);
+            });
         }
 
-        hide('error');
-        show('icons');
-        show('button_next');
-        show('button_next1');
-        var address = ubicacion;
-        geocoder.geocode({'address': address}, function(results, status) {
-            if (status === 'OK') {
-              setLayer(departamento);
-              resultsMap.setCenter(results[0].geometry.location);
-              var marker = new google.maps.Marker({
-                map: resultsMap,
-                position: results[0].geometry.location
-              });
-            } else {
-              alert('Geocode was not successful for the following reason: ' + status);
+        function setLayer(departamento) {
+            $(function() {
+                $(document).ready(function() {
+                    var TXT_URL = 'https://afverdugo3348.github.io/fedearroz-clima/editables/maps_polygon/' + departamento.trim().toLowerCase() + '.txt';
+                    $.ajax({
+                        url: TXT_URL,
+                    }).then(function(data) {
+                        var jobj = JSON.parse(data);
+                        var bermudaTriangle = new google.maps.Polygon({
+                            paths: jobj,
+                            strokeColor: '#FF0000',
+                            strokeOpacity: 0.8,
+                            strokeWeight: 2,
+                            fillColor: '#FF0000',
+                            fillOpacity: 0.35
+                        });
+                        bermudaTriangle.setMap(map);
+                    });
+                });
+            });
+        }
+
+        function geocodeAddress(geocoder, resultsMap) {
+            ubicacion = document.getElementById('ubicacion').value;
+            if (ubicacion == "") {
+                ubicacion = document.getElementById('ubicacion3').value
             }
-          });
-      }
-      function show(elemento){
-      	var elem = document.getElementById(elemento);
-      	elem.style.visibility = 'visible';
-        elem.style.zIndex = '2';
-      }
-      function hide(elemento){
-      	var elem = document.getElementById(elemento);
-      	elem.style.visibility = 'hidden';
-        elem.style.zIndex = '0';
-      }
+            var dpto = ubicacion.split(',')[1];
+            departamento = dpto.split('-')[0].trim();
+            municipio = ubicacion.split(',')[0];
+            municipio = replaceAll(municipio, ' ', '_');
+            ubicacion = replaceAll(ubicacion, ',', '_');
+            ubicacion = replaceAll(ubicacion, ' ', '');
+            var ubicacion2 = departamento + "_" + municipio;
+            ubicacion2 = replaceAll(ubicacion2, ',', '_');
+            ubicacion2 = replaceAll(ubicacion2, ' ', '');
 
-      function irAEtapa(){
-        var municipio2 = replaceAll(municipio, '_',' ');
-        window.location="etapa.html?mun="+municipio2+"&depar="+departamento+"&zona="+zona;
-      }
-      function replaceAll(text, c1, c2){
-        while(text.indexOf(c1)>0){
-          text = text.replace(c1,c2);
+            var departamento3 = replaceAll(departamento, ' ', '_');
+            departamento3 = departamento3.toLowerCase();
+            departamento3 = replaceAll(departamento3, 'ñ', 'n');
+            municipio = replaceAll(municipio, 'ñ', 'n');
+            console.log(departamento3 + "_" + municipio);
+            var zonaNum = dpto.split('-');
+            if (zonaNum.length > 1) {
+                zona = dpto.split('-')[1];
+            }
+            clima = document.getElementsByName('imagenes')[0];
+            actividades = document.getElementsByName('imagenes')[1];
+            console.log(departamento);
+            clima.style.backgroundImage = "url('./images/departamentos/climatologia/" + departamento3 + "_" + municipio.toLowerCase() + "_climatologia" + ".png')";
+
+
+            //ACTIVIDADES BACKGROUND
+            if (departamento == "Tolima" || departamento == "Huila" || departamento == "Valle del Cauca" || departamento == "Cauca") {
+
+                actividades.style.background = "url('./images/departamentos/actividades/Calendario_CENTRO_Riego_logo.jpg')";
+            } else if (departamento == "Meta" || departamento == "Casanare" || departamento == "Vichada" || departamento == "Arauca") {
+                console.log(departamento);
+                actividades.style.background = "url('./images/departamentos/actividades/Calendario_LLANOS_Riego_logo.jpg')";
+            } else if (departamento == "Cordoba" || departamento == "Sucre" || departamento == "Bolivar" || departamento == "Antioquia") {
+                console.log(departamento);
+                actividades.style.background = "url('./images/departamentos/actividades/Calendario_CARIBE_HUMEDO_Riego-Secano_logo.jpg')";
+            } else if (departamento == "Cesar" || departamento == "La Guajira" || departamento == "Magdalena") {
+                console.log(departamento);
+                actividades.style.background = "url('./images/departamentos/actividades/Calendario_CARIBE_SECO_Cesar_Riego_logo.jpg')";
+            } else if (departamento == "Norte de Santander" || departamento == "Santander") {
+                console.log(departamento);
+                actividades.style.background = "url('./images/departamentos/actividades/Calendario_CARIBE_SECO_Riego_logo.jpg')";
+            } else {
+                console.log(departamento);
+                var iconAct = document.getElementById('icon2').style.visibility = "hidden";
+            }
+
+            hide('error');
+            show('icons');
+            show('button_next');
+            show('button_next1');
+            var address = ubicacion;
+            geocoder.geocode({
+                'address': address
+            }, function(results, status) {
+                if (status === 'OK') {
+                    setLayer(departamento);
+                    resultsMap.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: resultsMap,
+                        position: results[0].geometry.location
+                    });
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
         }
-        return text;
-      }
-      function toggleMenu(){
-        $menu = document.getElementById('menu');
-        $menu.classList.toggle('active')
-      }
+
+        function show(elemento) {
+            var elem = document.getElementById(elemento);
+            elem.style.visibility = 'visible';
+            elem.style.zIndex = '2';
+        }
+
+        function hide(elemento) {
+            var elem = document.getElementById(elemento);
+            elem.style.visibility = 'hidden';
+            elem.style.zIndex = '0';
+        }
+
+        function irAEtapa() {
+            var municipio2 = replaceAll(municipio, '_', ' ');
+            window.location = "etapa.html?mun=" + municipio2 + "&depar=" + departamento + "&zona=" + zona;
+        }
+
+        function replaceAll(text, c1, c2) {
+            while (text.indexOf(c1) > 0) {
+                text = text.replace(c1, c2);
+            }
+            return text;
+        }
+
+        function toggleMenu() {
+            $menu = document.getElementById('menu');
+            $menu.classList.toggle('active')
+        }
     </script>
 </body>
+
 </html>
